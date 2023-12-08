@@ -1,0 +1,10 @@
+- La recuperación de datos se refiere a las técnicas utilizadas para asegurarnos que, ante fallas del sistema o de la aplicación, se sigan cumpliendo las propiedades ACID de las [[Transacción|transacciones]].  
+- Para cada instrucción de escritura que se ejecuta sobre un ítem:
+	- $X \to \text{Buffer en memoria} \to \text{Disco}$ 
+- **Actualización Inmediata (Immediate update)**: Los datos se guardan en disco lo antes posible y necesariamente antes del commit de la transacción.
+- **Actualización Diferida (Deferred update)**: Los datos se guardan en disco después del commit de la transacción.
+- Algoritmos de Recuperación:
+	- [[UNDO]]
+	- [[REDO]]
+	- [[UNDO-REDO]]
+- En los tres se asume que los solapamientos de transacciones son recuperables y evitan rollbacks en cascada.

@@ -1,0 +1,2 @@
+- Un link simbólico es un tipo de link manejado por el [[File System]] que referencia a un [[Archivo|archivo]] existente.
+- Se diferencia con un **hard link** en que, mientras el hard link asocia un nuevo nombre legible por el usuario a un [[Inode Number|inode number]] ya referenciado, un link simbólico o **soft link** tiene como contenido un path a un **hard link** que referencia a un inode number. Con lo cual, si borramos el hard link, el soft link será una referencia suelta y ya no lo podremos usar bien.

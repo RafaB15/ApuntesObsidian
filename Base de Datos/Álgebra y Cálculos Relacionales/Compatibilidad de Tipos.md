@@ -1,0 +1,2 @@
+Dadas dos relaciones $R(A_1, A_2, \dots , A_n)$ y $S(B_1, B_2, \dots , B_n)$, si *R* y S tienen el mismo grado, así como atributos de igual dominio. Esto se denomina compatibilidad de unión o de tipo.
+$$dom(A_i) = dom(B_i)$$

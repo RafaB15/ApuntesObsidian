@@ -1,0 +1,4 @@
+- Dado un conjunto de transacciones $T_1,T_2, \dots , T_n$ una ejecución serial es aquella en que las transacciones se ejecutan por completo una detrás de otra en base a algún orden $T_{i_1}, T_{i_2}, \dots, T_{i_n}$ 
+- Primero termina una transacción y luego empieza la otra. 
+- No se intercalan las instrucciones.
+- Entre *n* transacciones hay *n!* ejecuciones distintas.

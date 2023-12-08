@@ -1,0 +1,10 @@
+- Es una variable que permite la sincronización mediante la **exclusión mutua**, cuando un thread tiene el candado o lock ningún otro puede tenerlo.
+- La idea principal es que un [[Proceso|proceso]] asocia un lock a determinados estados o partes de código y requiere que el [[Thread|thread]] posea el lock para entrar en ese estado. Con esto se logra que sólo un thread acceda a un recurso compartido a la vez.
+- Un programador pone **locks** alrededor de secciones críticas de código (donde se accede a variables compartidas con otros [[Thread|threads]]) para evitar [[Race Condition|condiciones de carrera]], ejecutando esa parte del código como si fuera una *instrucción atómica*.
+- Cuando se llama a `lock`, se intenta adquirir el lock, lo cual se consigue si ningún otro thread lo tiene, para luego entrar a la sección crítica de código. Si otro thread intenta entrar en esta sección crítica, tendrá que esperar a que el thread que es dueño del lock haga un unlock.
+- Esto nos ayuda a garantizar exclusión mutua (mutual exclusion), con lo que si un thread está en una sección crítica, ningún otro puede estar ahí.
+- **Sip-waiting**: Un [[Thread|thread]] esperando a que otro thread libere un lock mientras chequea constantemente si ya lo liberó.
+- **Spin Lock**: Se chequea si el lock está disponible repetidas veces y en el momento en el que lo esté se toma.
+- Otra forma que tienen los threads de esperar locks es usando `park` y `unpark`, con lo que se fija si el lock está libre, y si no es así, se pone en una cola, llama a `park` y se va a dormir. Cuando el lock se libere se lo despertará.
+- **Two Phase Lock**: En una primera fase se hace una cantidad determinada de spins para ver si conseguimos el lock, para luego llamar a `park` e ir a dormir hasta que este esté libre.
+- **Deadlock**: Este concepto aparece cuando entre dos o más threads, uno obtiene el lock y por algún motivo nunca libera el mismo, haciendo que sus compañeros se bloqueen. A veces sucede por exclusión mutua recursiva.

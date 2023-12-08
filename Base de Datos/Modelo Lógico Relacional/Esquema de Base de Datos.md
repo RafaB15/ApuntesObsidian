@@ -1,0 +1,2 @@
+- En el modelo relacional, una base de datos se representa a través de un ***esquema de base de datos relacional.***
+- Un esquema de base de datos relacional *S* es un conjunto de [[Base de Datos/Modelo Lógico Relacional/Modelo Relacional#Esquema de relación|esquemas de relación]] $S = \{R_1, R_2, \dots , R_m\}$ junto con una serie de ***[[Base de Datos/Modelo Lógico Relacional/Modelo Relacional#Restricciones|resstricciones de identidad]]***. 

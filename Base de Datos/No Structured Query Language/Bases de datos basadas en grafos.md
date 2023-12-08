@@ -1,0 +1,11 @@
+- Son bases de datos [[No SQL]].
+- En las bases de datos basadas en grafos los elementos principales son **nodos** y **arcos (ejes)**. 
+- Estas bases de datos resultan útiles para modelar interrelaciones complejas entre las entidades. 
+- Las bases orientadas a grafos utilizan una estructura en que cada nodo mantiene una referencia directa a sus nodos adyacentes.
+- Organizar nuestra base de datos de esta forma nos provee ventajas para resolver problemas clásicos de grafos como:
+	- Encontrar patrones de nodos conectados entre sí. 
+	- Encontrar caminos entre nodos. 
+	- Encontrar la ruta más corta entre dos nodos. 
+	- Calcular medidas de centralidad asociadas a los nodos. 
+- En general, es una buena idea utilizarlas cuando en nuestro modelo conceptual encontramos que las instancias de los tipos de entidades mantienen interrelaciones con otras instancias de su mismo tipo de entidad.
+- Un exponente conocido de este tipo de bases de datos es [[Neo4j]].

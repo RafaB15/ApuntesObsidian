@@ -1,0 +1,25 @@
+- Un [[Solapamiento|solapamiento]] es **recuperable** si y sólo si ninguna [[Transacción|transacción]] *T* realiza el *commit* hasta tanto todas las transacciones que escribieron datos antes de que *T* los leyera hayan commiteado.
+- Recuperable no implica [[Serializabilidad|serializable]] y viceversa.
+- Para que un solapamiento sea recuperable, será necesario que el [[Sistemas de gestión de bases de datos|SGBD]] cuente con una serie de información que es almacenada por su gestor de recuperación en un log.
+- El log almacena los siguientes registros:
+	- $(BEGIN, T_{id})$: Indica que la transacción $T_{id}$ comenzó.
+	- $(WRITE, T_{id}, X, x_{old}, x_{new})$: Indica que la transacción $T_{id}$ escribió el ítem *X*, cambiando su viejo valor $x_{old}$ por un nuevo valor $x_{new}$.
+	- $(READ, T_{id}, X)$: Indica que la transacción $T_{id}$ leyó el ítem $X^{2}$.
+	- $(COMMIT, T_{id})$: Indica que la transacción $T_{id}$ commiteó.
+	- $(ABORT, T_{id})$: Indica que la transacción $T_{id}$ abortó.
+- En particular, los valores viejos de cada ítem almacenados en los registros WRITE del log son los que permitirán deshacer los efectos de la transacción en el momento de hacer el rollback.
+- Un [[Sistemas de gestión de bases de datos|SGBD]] **nunca** debería permitir la ejecución de un solapamiento que no sea recuperable.
+# Rollback
+
+- Rollback $\to$ Procesar el log de una transacción $T$ en forma inversa para deshacer sus efectos.  
+- Para deshacernos de los efectos de una transacción $T_j$ que hay que abortar, sin afectar la [[Serializabilidad|serializabilidad]] de las transacciones restantes:
+	- Si las modificaciones hechas por $T_j$ no fueron leídas por nadie, entonces vasta con hacer un rollback de $T_j$ .
+	- Si una transacción $T_i$ leyó un dato modificado por $T_j$, entonces será necesario hacer el rollback de $T_i$ para volverla a ejecutar.
+- Si un [[Solapamiento|solapamiento]] de transacciones es recuperable, entonces nunca será necesario deshacer transacciones que ya hayan commiteado.
+	- Aún así puede ser necesario deshacer transacciones que aún no han commiteado.
+- Que un solapamiento sea recuperable, no implica que no sea necesario tener que hacer rollbacks en cascada de transacciones que aún no commitearon.
+- Para evitar los rollbacks en cascada es necesario que una transacción no lea valores que aún no fueron commiteados. Esto es más fuerte que la condición de recuperabilidad.
+- Esta definición implica que quedan prohibidos los conflictos de la forma $(W_{T_i} (X); R_{T_j} (X))$ sin que en el medio exista un commit $c_{T_i}$.
+- Se evita entonces la anomalía de la lectura sucia.
+- Evitar rollbacks en cascada implica que el solapamiento sea recuperable, pero no implica que sea serializable.
+- S2PL y R2PL garantizan que todo solapamiento sea no sólo serializable, sino también recuperable, y que no se producirán cascadas de rollbacks al deshacer una transacción.

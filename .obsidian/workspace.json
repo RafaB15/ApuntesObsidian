@@ -1,0 +1,201 @@
+{
+  "main": {
+    "id": "6fee01111f255d26",
+    "type": "split",
+    "children": [
+      {
+        "id": "b93f74792dfaafdf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e8d55c0178083326",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5be624e82a508357",
+    "type": "split",
+    "children": [
+      {
+        "id": "8beb340c4c632581",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a6c6495eb312d385",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "60a66b1591002e3d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8cf7d212e3643b46",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 311.5
+  },
+  "right": {
+    "id": "01852ddd4215bf20",
+    "type": "split",
+    "children": [
+      {
+        "id": "c52da74510103d2c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "24dead0e992e0166",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9fabee9f6a67e5fe",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bee559e8e969136c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0a18fbc3509eb619",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "aa7a42bac3a2c68a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "e8d55c0178083326",
+  "lastOpenFiles": [
+    "Rauch.md",
+    "Sistemas Operativos/DHA/2. The Kernel Abstraction.md",
+    "Sistemas Operativos/DHA/1. Introduction.md",
+    "Sistemas Operativos/Teoría Mendez/Untitled.md",
+    "Sistemas Operativos/Teoría Mendez/Teoría Mendez.md",
+    "Sistemas Operativos/Teoría Mendez/Introducción.md",
+    "Sistemas Operativos/Practica/25 08 23.md",
+    "Sistemas Operativos/Practica/08-09-2023.md",
+    "Algoritmos y Programación II/TP2 Simulador.md",
+    "Algoritmos y Programación III/Mensajes.md",
+    "Algoritmos y Programación III/Índice Algoritmos y Programación III.md",
+    "Algoritmos y Programación III/Igualdad e identidad.md",
+    "Algoritmos y Programación III/Closure.md",
+    "Algoritmos y Programación II/TDA abb Informe.md",
+    "Análisis de la información/TP1 Softlearn.md",
+    "Análisis de la información/Índice Análisis de la información.md",
+    "Estructura del Computador/Murdocca Capítulo 5/Macroinstrucciones (Macros).md",
+    "Estructura del Computador/Murdocca Capítulo 5/El proceso de ensamblado.md",
+    "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación.md",
+    "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación/35EA274F-8600-41B1-B207-E56EF1C62249.jpeg",
+    "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación/Untitled 2.png",
+    "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación/Untitled 3.png",
+    "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación/Untitled 4.png",
+    "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación/Untitled.png",
+    "Estructura del Computador/Murdocca Capítulo 5.md",
+    "Estructura del Computador/Índice Estructura del Computador.md",
+    "Teoría de Algoritmos I/Inducción Matemática.md",
+    "Teoría de Algoritmos I/Índice Teoría de Algoritmos I.md",
+    "Teoría de Algoritmos I/Grafos.md",
+    "Taller de Programación I/Seguimiento.md",
+    "Taller de Programación I/Índice Taller de Programación I.md",
+    "Física I/Óptica Física/Untitled 1.png",
+    "Física I/Ondas/Untitled.png",
+    "Base de Datos/images/Pasted image 20231205235858.png",
+    "Base de Datos/images/Pasted image 20231205235556.png",
+    "Base de Datos/images/Pasted image 20231205235522.png",
+    "Base de Datos/images",
+    "Base de Datos/Exámenes/images",
+    "Base de Datos/Procesamiento y Optimización de Consultas/images",
+    "Base de Datos/Procesamiento y Optimización de Consultas",
+    "Base de Datos/No Structured Query Language/images",
+    "Sistemas Operativos/Parciales/images",
+    "Sistemas Operativos/Parciales",
+    "Sistemas Operativos/Resumen/Filesystem/images",
+    "Sistemas Operativos/Resumen/Filesystem",
+    "Sistemas Operativos/Resumen/Concurrencia/images",
+    "Untitled.canvas"
+  ]
+}

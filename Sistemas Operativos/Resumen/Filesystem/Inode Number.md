@@ -1,0 +1,2 @@
+- El inode number es un nombre de bajo nivel que está asociado a cada [[Archivo|archivo]], [[Directorio|directorio]] o [[Links simbólicos|link simbólico]].
+- A este número lo pueden referenciar uno o muchos nombres legibles por el usuario.

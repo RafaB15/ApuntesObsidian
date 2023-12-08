@@ -1,0 +1,2 @@
+
+El identificador de proceso, o PID por sus siglas en inglés, es un número con el que los sistemas Unix identifican a un [[Sistemas Operativos/Resumen/Proceso|Proceso]] en caso de que queramos hacer algo con este, como detener su ejecución o averiguar su estado.

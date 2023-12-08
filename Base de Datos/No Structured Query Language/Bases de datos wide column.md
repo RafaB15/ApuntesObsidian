@@ -1,0 +1,6 @@
+- Son bases de datos [[No SQL]].
+- Son una evolución de las [[Bases de datos clave-valor]], ya que agrupan los pares vinculados a una misma entidad como columnas asociadas a una misma clave primaria. 
+- Un valor particular de la clave primaria junto con todas sus columnas asociadas forma un agregado análogo a la fila de una tabla. Pero además, estas bases permiten agregar conjuntos de columnas en forma dinámica a una fila, convirtiéndola en un [[Agregado|agregado]] llamado fila ancha *(wide row)*. 
+- Esta dinámica podría representar las interrelaciones de la entidad con otra entidad. (Ejemplo: Un cliente de una librería y todos los libros que ha comprado.)
+- Entonces por ejemplo, tenemos un agregado que son dos columnas que representan algo, y para representar la relación que tiene con otro objeto, agregamos dos columnas más con su información, y hacemos eso por cada relación del agregado (wide row). Al ser un agregado estarán todas cerca.
+- Al ser una tabla hay una estructura definida de lo que se puede agregar.

@@ -1,0 +1,1 @@
+Es un espacio de memoria que se utiliza para memoria reservada dinámicamente que maneja el usuario en un [[Sistemas Operativos/Resumen/Proceso|proceso]], como cuando se llama a la función **malloc()**.

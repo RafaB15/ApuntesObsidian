@@ -1,0 +1,4 @@
+- Costos calculados con la [[Información de Catálogo]]. 
+- En muchos casos, el resultado de un operador puede ser procesado por el operador siguiente en forma parcial (es decir sin necesidad de que el operador anterior haya terminado de generar todas las tuplas). 
+- Esta estrategia se denomina **pipelining**, y los [[Sistemas de gestión de bases de datos|SGBD's]] suelen utilizarla en los planes de ejecución siempre que sea posible. 
+- Al calcular el costo de dos operadores anidados $O_2(O_1(R))$ debemos considerar que en caso de utilizar pipelining no será necesario tener todos los bloques de la salida de $O_1$ para comenzar a calcular $O_2$. En particular, no tendremos que materializar toda la salida de $O_1$ por falta de espacio en memoria.

@@ -1,0 +1,17 @@
+- Se conoce como **No SQL** a todo aquello en el mundo de las bases de datos que no esté basado en el modelo relacional o [[SQL]].
+- Surge debido a ciertas limitaciones que fueron surgiendo al pasar el tiempo y seguir trabajando con el [[Modelo Relacional|modelo relacional]].
+- Los objetivos de los [[Sistemas de gestión de bases de datos|SGBD]] no relacionales es tener:
+	- Mayor escalabilidad para trabajar con grandes volúmenes de datos.
+	- Mayor performance en aplicaciones web.
+	- Mayor flexibilidad sobre las estructuras de datos.
+	- Mayor capacidad de distribución.
+- Las limitaciones de las [[Sistemas de gestión de bases de datos|SGBD]] no relacionales son:
+	- Los joins de tablas son costosos.
+	- El manejo de transacciones en forma distribuida no escala.
+- Dado que estas bases de datos intentan aumentar la velocidad de procesamiento y la capacidad de almacenar información, trabajan con [[Sistema de gestión de bases de datos distribuido|SGBD distribuidos]].
+
+- Las bases de datos NO-SQL se clasifican en distintos tipos:
+	- [[Bases de datos clave-valor]]
+	- [[Bases de datos orientadas a documentos]]
+	- [[Bases de datos wide column]]
+	- [[Bases de datos basadas en grafos]]

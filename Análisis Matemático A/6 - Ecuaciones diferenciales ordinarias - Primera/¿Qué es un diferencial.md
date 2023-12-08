@@ -1,0 +1,3 @@
+![[Análisis Matemático A/6 - Ecuaciones diferenciales ordinarias - Primera/¿Qué es un diferencial/Untitled.png|%C2%BFQue%CC%81%20es%20un%20diferencial%20654174aab5ac44ca86e6aaeb10a4189e/Untitled.png]]
+
+![[Análisis Matemático A/6 - Ecuaciones diferenciales ordinarias - Primera/¿Qué es un diferencial/Untitled 1.png|%C2%BFQue%CC%81%20es%20un%20diferencial%20654174aab5ac44ca86e6aaeb10a4189e/Untitled%201.png]]

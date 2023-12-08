@@ -1,0 +1,1 @@
+Es un paso intermedio entre el [[Base de Datos/Modelo Conceptual de BDD/Modelo Conceptual|modelo conceptual]] y el [[Base de Datos/Introducción/Arquitectura de 3 capas ANSI SPARC#Modelo interno|modelo interno]], que formaliza las descripciones del modelo conceptual a través del [[Base de Datos/Modelo Lógico Relacional/Modelo Relacional|Modelo Relacional]].

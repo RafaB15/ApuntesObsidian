@@ -1,0 +1,1 @@
+Es un espacio de memoria que se utiliza en un [[Sistemas Operativos/Resumen/Proceso|proceso]] para almacenar variables locales, pasar parámetros a subrutinas y almacenar los valores que devuelven.

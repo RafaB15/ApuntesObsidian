@@ -1,0 +1,12 @@
+- Los **índices** son estructuras de búsqueda almacenadas y actualizadas por el [[Sistemas de gestión de bases de datos|SGBD]], que agilizan la búsqueda de registros a partir del valor de un [[Atributos|atributo]] o conjunto de atributos.
+- Si usamos los atributos de un índice existente en una consulta, está se ejecutará más rápido.
+- Pueden implementarse con distintas estructuras de datos: 
+	- Árboles (binarios, B, B+, B*, ...) 
+	- Tablas de hash 
+- Si entramos a esta estructura y hay un índice con el atributo *B*, si entramos con un valor de B=4, nos indicará los punteros a los bloques en donde puede haber un B = 4. 
+- Si es un árbol entonces tendremos que guardar su altura, para saber cuantos accesos a memoria tenemos que hacer para llegar a los datos, y el largo, que te dice la cantidad de hojas.
+- En los SGBD’s los índices se clasifican en distintos tipos: 
+	- **Índice primario:** Cuando el índice se construye sobre el campo de ordenamiento clave de un archivo ordenado de registros.
+	- **índice de clustering:** Cuando se construye sobre el campo de ordenamiento del archivo físico pero este no es clave. 
+	- **índices secundarios:** Los índices que se construyen sobre campos que no son los campos de ordenamiento del archivo. Devuelven muchos punteros pues los datos no estarán juntos.
+- Observación: Un archivo sólo puede tener un único índice primario o de clustering. Se pueden tener tantos como queramos de los secundarios, pues tenerlos no afecta el orden de los elementos en la tabla.

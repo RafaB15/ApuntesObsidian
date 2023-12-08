@@ -1,0 +1,3 @@
+- Se dice que un [[Base de Datos/Modelo Lógico Relacional/Esquema de Base de Datos|esquema de bases de datos]] relacional está en 1FN cuando los dominios de todos sus [[Base de Datos/Modelo Conceptual de BDD/Atributos|atributos]] solo permiten valores atómicos (es decir, indivisibles) y monovaluados.
+- Como se considera actualmente que en el [[Base de Datos/Modelo Lógico Relacional/Modelo Relacional|modelo relacional]] todos los atributos deben ser de esta forma, todo esquema relacional está ya en 1FN.
+- En caso de que no se esté en 1FN y se tenga que llegar ahí, podemos duplicar las filas cambiando el valor monovaluado por sus diferentes alternativas o, definir una cantidad máxima de valores y hacer un atributo distinto para cada alternativa.

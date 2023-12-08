@@ -1,0 +1,12 @@
+- Los [[Sistemas de gestión de bases de datos|SGBD's]] guardan distinto tipo de **información de catálogo** que es utilizada para estimar costos y optimizar las consultas.
+- Nosotros utilizaremos la siguiente notación:
+	- `n(R)`: Cantidad de tuplas de la relación *R*.
+	- `B(R)`: Cantidad de bloques de almacenamiento que ocupa *R*. Normalmente se guardan las filas de a bloques y un acceso a memoria recupera un bloque entero.
+	- `V(A,R)`: Cantidad de valores distintos que adopta el atributo *A* en *R* (variabilidad).
+	- `F(R)`: Cantidad de tuplas de *R* que entran en un bloque (factor de bloque). $F(R) = \frac{n(R)}{B(R)} \implies B(R) = \frac{n(R)}{F(R)}$
+- También se almacena información sobre la cantidad de niveles que tienen los [[Índices|índices]] construidos, y la cantidad de bloques que ocupan sus hojas.
+	- `Height(I(A,R))`: Altura del [[Índices|índice]] de búsqueda *I* por el [[Atributos|atributo]] *A* de la [[Modelo Relacional#Relación|relación]] *R*.
+	- `Lenght(I(A,R))`: Cantidad de bloques que ocupan las hojas del [[Índices|índice]] *I*.
+- En postgress siempre hay un esquema llamado pg_catalog con información de catálogo.
+- Actualizar la información de catálogo en cada operación de ABM puede ser muy costoso.
+- Los [[Sistemas de gestión de bases de datos|SGBD's]] suelen hacerlo con cierta periodicidad, o cuando están ociosos, o cuando el usuario lo indica explícitamente.

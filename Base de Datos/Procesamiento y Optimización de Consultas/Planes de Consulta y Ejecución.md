@@ -1,0 +1,9 @@
+- La optimización de una consulta se inicia con una expresión en [[Álgebra Relacional|álgebra relacional]]. 
+- La expresión se optimiza a través de una heurística y utilizando reglas de equivalencia, obteniendo un **plan de consulta**. 
+- Luego, cada plan de consulta lógico se materializa para obtener un **plan de ejecución** en el que se indica el procedimiento físico: estructuras de datos a utilizar, índices, algoritmos a utilizar, etc. 
+- Para comparar distintos planes de ejecución, necesitamos estimar su costo. Algunos de los factores que inciden en la performance son: 
+	- El costo de acceso a disco (lectura o escritura) 
+	- El costo de procesamiento 
+	- El costo de uso de memoria 
+	- El costo de uso de red
+- *Solo tendremos en cuenta los costos de acceso a disco*.

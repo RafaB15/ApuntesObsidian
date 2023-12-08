@@ -1,0 +1,1 @@
+![[Organización de datos/Reducción de Dimensiones/Reducción de dimensiones eigenfaces/Untitled.png|Untitled]]
