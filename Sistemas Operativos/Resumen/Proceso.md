@@ -11,7 +11,7 @@ Un proceso incluye:
 - Las señales (signals) pendientes.
 - Datos internos del kernel.
 - El estado completo del procesador.
-- Un espacio de direcciones de memoria.
+- Un espacio de direcciones de memoria ([[Address Space]]).
 - Uno o más hilos de Ejecución. Cada thread contiene
 	- Un único contador de programa
 	- Un stack

@@ -18,7 +18,7 @@ Para las siguientes planificaciones:
 Vemos en una tabla la ejecución de las diferentes transacciones
 
 | $T_1$ | $T_2$ | $T_3$ |
-| - - | - - | - - |
+| - | - | - |
 |$b_{T_1}$|      |      |
 |      |$b_{T_2}$|      |
 |      |      |$b_{T_3}$|
@@ -55,7 +55,7 @@ Como vemos, no hay ciclos, lo que nos indica que **es serializable por conflicto
 Vemos en una tabla la ejecución de las diferentes transacciones
 
 | $T_1$ | $T_2$ | $T_3$ |
-| - - | - - | - - |
+| - | - | - |
 |$b_{T_1}$|      |      |
 |      |$b_{T_2}$|      |
 |      |      |$b_{T_3}$|

@@ -4,18 +4,113 @@
     "type": "split",
     "children": [
       {
-        "id": "b93f74792dfaafdf",
+        "id": "8ca858e072e61b5a",
         "type": "tabs",
         "children": [
           {
-            "id": "e8d55c0178083326",
+            "id": "d03feffb9fdc33d1",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sistemas Operativos/Parciales/16-11-23.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "3f34b8e7092e4e25",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sistemas Operativos/Parciales/04-10-22.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "282c399ae753dbe3",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sistemas Operativos/Parciales/09-12-22.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "99628b5014b3ffea",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Sistemas Operativos/Parciales/22-02-23.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "62d555decf1d5590",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sistemas Operativos/Resumen/Kernel.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "82a75fd0d7838dd0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sistemas Operativos/Resumen/Concurrencia/Thread.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b14e42f2f0aaabb2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sistemas Operativos/Resumen/Scheduling.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "042d29f0bcf39654",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sistemas Operativos/Resumen/Paging.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -81,6 +176,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Sistemas Operativos/Parciales/22-02-23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +193,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Sistemas Operativos/Parciales/22-02-23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +215,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Sistemas Operativos/Parciales/22-02-23.md"
+              }
             }
           },
           {
@@ -148,44 +247,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e8d55c0178083326",
+  "active": "99628b5014b3ffea",
   "lastOpenFiles": [
-    "Rauch.md",
+    "Sistemas Operativos/Parciales/09-12-22.md",
+    "Sistemas Operativos/Parciales/16-11-23.md",
+    "Sistemas Operativos/Parciales/04-10-22.md",
+    "Sistemas Operativos/Resumen/Kernel.md",
     "Sistemas Operativos/DHA/2. The Kernel Abstraction.md",
-    "Sistemas Operativos/DHA/1. Introduction.md",
-    "Sistemas Operativos/Teoría Mendez/Untitled.md",
-    "Sistemas Operativos/Teoría Mendez/Teoría Mendez.md",
-    "Sistemas Operativos/Teoría Mendez/Introducción.md",
-    "Sistemas Operativos/Practica/25 08 23.md",
-    "Sistemas Operativos/Practica/08-09-2023.md",
-    "Algoritmos y Programación II/TP2 Simulador.md",
-    "Algoritmos y Programación III/Mensajes.md",
-    "Algoritmos y Programación III/Índice Algoritmos y Programación III.md",
-    "Algoritmos y Programación III/Igualdad e identidad.md",
-    "Algoritmos y Programación III/Closure.md",
-    "Algoritmos y Programación II/TDA abb Informe.md",
-    "Análisis de la información/TP1 Softlearn.md",
-    "Análisis de la información/Índice Análisis de la información.md",
-    "Estructura del Computador/Murdocca Capítulo 5/Macroinstrucciones (Macros).md",
-    "Estructura del Computador/Murdocca Capítulo 5/El proceso de ensamblado.md",
-    "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación.md",
+    "Sistemas Operativos/Resumen/Concurrencia/Thread.md",
+    "Sistemas Operativos/Resumen/Paging.md",
+    "Sistemas Operativos/Resumen/Segmentación.md",
+    "Sistemas Operativos/Resumen/Virtualización de Memoria.md",
+    "Sistemas Operativos/Resumen/Address Space.md",
+    "Sistemas Operativos/Resumen/Proceso.md",
+    "Sistemas Operativos/Resumen/Virtualización del Procesador.md",
+    "Sistemas Operativos/Resumen/Sistema Operativo.md",
+    "Sistemas Operativos/Resumen/Proceso de Compilación.md",
+    "Sistemas Operativos/Resumen/Filesystem/File System.md",
+    "Sistemas Operativos/Resumen/Scheduling.md",
+    "Sistemas Operativos/Parciales/22-02-23.md",
+    "Sistemas Operativos/Parciales/images/Pasted image 20231209181910.png",
+    "Sistemas Operativos/Parciales/images/Memoria paginada parcial 16 23.png",
+    "Base de Datos/Structured Query Language/SQL.md",
+    "Base de Datos/Parcialitos/Parcialito 5 108225.md",
+    "Base de Datos/No Structured Query Language/MongoDB.md",
+    "Base de Datos/Concurrencia y Transacciones/Control de Concurrencia.md",
+    "Sistemas Operativos/Parciales/images/Pasted image 20231208184933.png",
+    "Sistemas Operativos/Parciales/images/Pasted image 20231208184904.png",
+    "Sistemas Operativos/Parciales/images/Pasted image 20231208145730.png",
+    "Organización de datos/Fairness/Untitled.png",
+    "Física I/Ondas.md",
+    "Física I/Índice Física I.md",
+    "Base de Datos/Diseño Relacional/Diseño Relacional.md",
+    "Base de Datos/Guías/Guía 3.md",
+    "Base de Datos/Guías/Índice guías.md",
     "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación/35EA274F-8600-41B1-B207-E56EF1C62249.jpeg",
     "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación/Untitled 2.png",
     "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación/Untitled 3.png",
     "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación/Untitled 4.png",
-    "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación/Untitled.png",
-    "Estructura del Computador/Murdocca Capítulo 5.md",
-    "Estructura del Computador/Índice Estructura del Computador.md",
-    "Teoría de Algoritmos I/Inducción Matemática.md",
-    "Teoría de Algoritmos I/Índice Teoría de Algoritmos I.md",
-    "Teoría de Algoritmos I/Grafos.md",
-    "Taller de Programación I/Seguimiento.md",
-    "Taller de Programación I/Índice Taller de Programación I.md",
-    "Física I/Óptica Física/Untitled 1.png",
-    "Física I/Ondas/Untitled.png",
-    "Base de Datos/images/Pasted image 20231205235858.png",
-    "Base de Datos/images/Pasted image 20231205235556.png",
-    "Base de Datos/images/Pasted image 20231205235522.png",
     "Base de Datos/images",
     "Base de Datos/Exámenes/images",
     "Base de Datos/Procesamiento y Optimización de Consultas/images",

@@ -13,7 +13,7 @@ Y la memoria física sería
 ![[Memoria física paging.png]]
 
 - Da una abstracción para el programador de como se organiza la memoria, incluyendo para qué lado crece un espacio de direcciones.
-- Simplicidad para manejar memoria libre, pues si necesitamos aginar 3 bloques de 16 bytes, entonces se fija en memoria física si tiene 3 bloques disponibles. Como todos son del mismo tamaño no habrá que esperar que justo haya uno que nos convenga, o tener que reorganizar la memoria. A veces el [[Sistema Operativo|OS]] guarda una lista con los espacios libres y toma los primeros 3.
+- Simplicidad para manejar memoria libre, pues si necesitamos asignar 3 bloques de 16 bytes, entonces se fija en memoria física si tiene 3 bloques disponibles. Como todos son del mismo tamaño no habrá que esperar que justo haya uno que nos convenga, o tener que reorganizar la memoria. A veces el [[Sistema Operativo|OS]] guarda una lista con los espacios libres y toma los primeros 3.
 - La forma de las direcciones de memoria varía dependiendo del tamaño de las páginas, pero una cantidad de bits se usan para identificar el número de la página (*Virtual Page Number, VPN*), y los siguientes bits son para identificar en cual byte de la página se encuentra el dato (*offset*).
 
 ![[Dirección Virtual paging.png]]

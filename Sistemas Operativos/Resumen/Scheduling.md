@@ -2,7 +2,7 @@
 
 Scheduling o planificación de tareas se refiere a la manera en la que el [[Sistemas Operativos/Resumen/Kernel|kernel]] del sistema operativo decide qué tareas decide ejecutar en qué orden para intentar optimizar el uso de el o los procesadores.
 
-Hay muchas políticas diferentes para determinar estas prioridades, que también dependerás de los recursos que tengamos a nuestra disposición.
+Hay muchas políticas diferentes para determinar estas prioridades, que también dependerán de los recursos que tengamos a nuestra disposición.
 
 # Terminología
 
@@ -11,7 +11,7 @@ Hay muchas políticas diferentes para determinar estas prioridades, que también
 $$\displaystyle \large T_{turnaround} = T_{completion} - T_{arival}$$
 - **Tiempo de respuesta (Delay)** Se define al response time como el tiempo desde que se llega una tarea al sistema hasta que este es programado (scheduled). El tiempo que el usuario percibe se tardó en hacer una tarea.
 $$\displaystyle \large T_{response} = T_{firstrun} - T_{arival}$$
-- **Previsibilidad**: Baja varianza en en los tiempos de respuesta de una tarea específica.
+- **Previsibilidad**: Baja varianza en los tiempos de respuesta de una tarea específica.
 - **Rendimiento (Throughput)**: El ratio con el que se completan tareas.
 - **Costo del Scheduling (Overhead)**: El tiempo de pasar de una tarea a otra.
 - **Fairness**: Igualdad de recursos para las tareas.
@@ -29,7 +29,7 @@ $$\displaystyle \large T_{response} = T_{firstrun} - T_{arival}$$
 - Tiene gran nivel de igualdad (fairness).
 - Si una tarea corta llega después de una tarea larga, hace al sistema parecer ineficiente.
 - No tiene un buen tiempo de respuesta promedio si las tareas tienen tiempos distintos de ejecución. 
-- El tiempo de respuesta promedio es óptimo si todas las tareas tardan los mismo (no es probable).
+- El tiempo de respuesta promedio es óptimo si todas las tareas tardan lo mismo (no es probable).
 
 ## Shortest Job First (SJF)
 

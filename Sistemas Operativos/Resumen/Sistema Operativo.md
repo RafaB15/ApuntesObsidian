@@ -15,7 +15,7 @@ Un **Sistema Operativo (OS):**
 Un sistema operativo tiene que cumplir 3 roles:
 ## Referee
 
-Un OS gestiona recursos compartidos centre diferentes aplicaciones que se encuentran ejecutándose en la misma máquina física. 
+Un OS gestiona recursos compartidos entre diferentes aplicaciones que se encuentran ejecutándose en la misma máquina física. 
 
 - Un OS puede frenar la ejecución de una aplicación e iniciar la ejecución de otra.
 - Los OS aíslan a cada aplicación de las demás que se encuentran corriendo en la misma computadora.
@@ -32,7 +32,8 @@ El sistema operativo provee la ilusión de que se dispone de toda la memoria par
 Un OS debe proveer una serie de ***servicios comunes*** que faciliten un mecanismo que permita compartir, por ejemplo, información entre las aplicaciones (ej. Cut and paste, look and feel, acceso a los dispositivos de entrada y salida del sistema)
 
 # Kernel
-El nivel más bajo de software corriendo en el sistema operativo se conoce como [[Sistemas Operativos/Resumen/Kernel]], el cual tiene permisos para hacer cualquier cosa dentro del sistema operativo.
+
+El nivel más bajo de software corriendo en el sistema operativo se conoce como [[Sistemas Operativos/Resumen/Kernel|Kernel]], el cual tiene permisos para hacer cualquier cosa dentro del sistema operativo.
 
 Cuando un programa está corriendo, este alterna entre user mode y kernel mode, dependiendo de los permisos necesarios para ejecutar ciertas acciones.
 

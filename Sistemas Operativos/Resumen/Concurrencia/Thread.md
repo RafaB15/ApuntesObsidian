@@ -14,6 +14,7 @@
 	- Se crea una entrada de **TCB** por cada thread que guarda su estado.
 	- A diferencia de los procesos, en este cambio de contexto, el [[Address Space|address space]] se mantiene igual, pues no hay necesidad de cambiar la [[Paging#Page table|page table]] que estemos usando.
 	- En un proceso multi-thread, cada thread va a tener su propio [[Stack|stack]] (call stack).
+
 	![[Stack de un proceso con múltiples threads.png]]
 - En resumen, mientras que un [[Proceso|proceso]] es un programa en ejecución con derechos restringidos, thread es una secuencia independiente de instrucciones ejecutándose dentro de un programa.
 - Cada thread corre en un procesador virtual dedicado (exclusivo) con una velocidad variable e impredecible. El orden en el que se ejecutan las instrucciones atómicas es determinado por el **thread scheduler**.

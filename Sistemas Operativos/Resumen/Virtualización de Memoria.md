@@ -15,7 +15,7 @@ La traducción de direcciones es el proceso por el cual una **dirección virtual
 
 La relocalización dinámica, también conocida como **base and bounds** es una técnica en la cual a cada proceso se le asigna un registro base y otro registro límite.
 
-Cada programa se escribe y compila como si su memoria empezara en la posición cero. Cuando el OS decide cargar el programa en memoria se asigna el valor del registro base a la dirección desde se lo va a cargar realmente. 
+Cada programa se escribe y compila como si su memoria empezara en la posición cero. Cuando el OS decide cargar el programa en memoria se asigna el valor del registro base a la dirección desde la que se lo va a cargar realmente. 
 
 Con lo cual, cuando se quiera acceder a memoria durante la ejecución del programa, se obtendrá la dirección real de la siguiente manera
 
