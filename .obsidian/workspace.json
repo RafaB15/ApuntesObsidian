@@ -4,113 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "8ca858e072e61b5a",
+        "id": "36adad46f917d372",
         "type": "tabs",
         "children": [
           {
-            "id": "d03feffb9fdc33d1",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sistemas Operativos/Parciales/16-11-23.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "3f34b8e7092e4e25",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sistemas Operativos/Parciales/04-10-22.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "282c399ae753dbe3",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sistemas Operativos/Parciales/09-12-22.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "99628b5014b3ffea",
+            "id": "e6d0acffc2f4d220",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sistemas Operativos/Parciales/22-02-23.md",
+                "file": "Algoritmos y Programación III/Principios de Diseño/SOLID, SRP, OCP, LSP, ISP, DIP.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "62d555decf1d5590",
+            "id": "b06277d4cd09b684",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sistemas Operativos/Resumen/Kernel.md",
+                "file": "Algoritmos y Programación III/Principios de Diseño/Principios de Diseño.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "82a75fd0d7838dd0",
+            "id": "d469e23dec88291d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sistemas Operativos/Resumen/Concurrencia/Thread.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b14e42f2f0aaabb2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sistemas Operativos/Resumen/Scheduling.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "042d29f0bcf39654",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sistemas Operativos/Resumen/Paging.md",
+                "file": "Algoritmos y Programación III/Patrones de Diseño/Patrones de Diseño.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -139,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "java",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -176,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemas Operativos/Parciales/22-02-23.md",
+                "file": "Algoritmos y Programación III/Patrones de Diseño/Patrones de Diseño.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -193,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemas Operativos/Parciales/22-02-23.md",
+                "file": "Algoritmos y Programación III/Patrones de Diseño/Patrones de Diseño.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -216,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemas Operativos/Parciales/22-02-23.md"
+                "file": "Algoritmos y Programación III/Patrones de Diseño/Patrones de Diseño.md"
               }
             }
           },
@@ -226,7 +160,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -247,54 +183,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "99628b5014b3ffea",
+  "active": "a6c6495eb312d385",
   "lastOpenFiles": [
-    "Sistemas Operativos/Parciales/09-12-22.md",
-    "Sistemas Operativos/Parciales/16-11-23.md",
-    "Sistemas Operativos/Parciales/04-10-22.md",
-    "Sistemas Operativos/Resumen/Kernel.md",
-    "Sistemas Operativos/DHA/2. The Kernel Abstraction.md",
-    "Sistemas Operativos/Resumen/Concurrencia/Thread.md",
-    "Sistemas Operativos/Resumen/Paging.md",
-    "Sistemas Operativos/Resumen/Segmentación.md",
-    "Sistemas Operativos/Resumen/Virtualización de Memoria.md",
-    "Sistemas Operativos/Resumen/Address Space.md",
-    "Sistemas Operativos/Resumen/Proceso.md",
-    "Sistemas Operativos/Resumen/Virtualización del Procesador.md",
-    "Sistemas Operativos/Resumen/Sistema Operativo.md",
-    "Sistemas Operativos/Resumen/Proceso de Compilación.md",
-    "Sistemas Operativos/Resumen/Filesystem/File System.md",
-    "Sistemas Operativos/Resumen/Scheduling.md",
-    "Sistemas Operativos/Parciales/22-02-23.md",
-    "Sistemas Operativos/Parciales/images/Pasted image 20231209181910.png",
-    "Sistemas Operativos/Parciales/images/Memoria paginada parcial 16 23.png",
-    "Base de Datos/Structured Query Language/SQL.md",
-    "Base de Datos/Parcialitos/Parcialito 5 108225.md",
-    "Base de Datos/No Structured Query Language/MongoDB.md",
-    "Base de Datos/Concurrencia y Transacciones/Control de Concurrencia.md",
-    "Sistemas Operativos/Parciales/images/Pasted image 20231208184933.png",
-    "Sistemas Operativos/Parciales/images/Pasted image 20231208184904.png",
-    "Sistemas Operativos/Parciales/images/Pasted image 20231208145730.png",
-    "Organización de datos/Fairness/Untitled.png",
-    "Física I/Ondas.md",
-    "Física I/Índice Física I.md",
-    "Base de Datos/Diseño Relacional/Diseño Relacional.md",
-    "Base de Datos/Guías/Guía 3.md",
-    "Base de Datos/Guías/Índice guías.md",
-    "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación/35EA274F-8600-41B1-B207-E56EF1C62249.jpeg",
-    "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación/Untitled 2.png",
-    "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación/Untitled 3.png",
-    "Estructura del Computador/Murdocca Capítulo 5/El proceso de compilación/Untitled 4.png",
-    "Base de Datos/images",
-    "Base de Datos/Exámenes/images",
-    "Base de Datos/Procesamiento y Optimización de Consultas/images",
-    "Base de Datos/Procesamiento y Optimización de Consultas",
-    "Base de Datos/No Structured Query Language/images",
-    "Sistemas Operativos/Parciales/images",
-    "Sistemas Operativos/Parciales",
-    "Sistemas Operativos/Resumen/Filesystem/images",
-    "Sistemas Operativos/Resumen/Filesystem",
-    "Sistemas Operativos/Resumen/Concurrencia/images",
+    "Untitled",
+    "Algoritmos y Programación III/Programación Orientada a Objetos/Diagrama de Clases.md",
+    "Algoritmos y Programación III/Patrones de Diseño/Patrones de Diseño.md",
+    "Algoritmos y Programación III/Patrones de Diseño",
+    "Algoritmos y Programación III/Untitled.md",
+    "Algoritmos y Programación III/Principios de Diseño/EDP, Explicit Dependencies Principle.md",
+    "Algoritmos y Programación III/Principios de Diseño/PoLK, Principle of Least Knowledge.md",
+    "Algoritmos y Programación III/Principios de Diseño/Principios de Diseño.md",
+    "Algoritmos y Programación III/Programación Orientada a Objetos/Java.md",
+    "Organización de datos/Spark/Apache Spark.md",
+    "Algoritmos y Programación III/Principios de Diseño/SoC, Separation of Concerns Principle.md",
+    "Algoritmos y Programación III/Principios de Diseño/KOP, Knuth's Optimization Principle.md",
+    "Algoritmos y Programación III/Principios de Diseño/KISS, Keep It Simple, Stupid!.md",
+    "Algoritmos y Programación III/Principios de Diseño/YAGNI, You Ain’t Gonna Need It.md",
+    "Algoritmos y Programación III/Principios de Diseño/DRY, Don’t Repeat Yourself.md",
+    "Algoritmos y Programación III/Principios de Diseño/PoLA, Principle of Least Astonishment.md",
+    "Algoritmos y Programación III/Principios de Diseño/FIRST, Fast, Independent, Repeatable, Self-checking, Timely.md",
+    "Algoritmos y Programación III/Principios de Diseño/PoLC, Principle of Least Commitment.md",
+    "Algoritmos y Programación III/Principios de Diseño/TDA, Tell, Don’t Ask!.md",
+    "Algoritmos y Programación III/Principios de Diseño/DIP, Dependency Inversion Principle.md",
+    "Algoritmos y Programación III/Principios de Diseño/SOLID, SRP, OCP, LSP, ISP, DIP.md",
+    "Algoritmos y Programación III/Principios de Diseño/ISP, Interface Segregation Principle.md",
+    "Algoritmos y Programación III/Principios de Diseño/LSP, Liskov Substitution Principle.md",
+    "Algoritmos y Programación III/Principios de Diseño/OCP, Open-Closed Principle.md",
+    "OCP, Open/Closed Principle.md",
+    "OCP, Open",
+    "Algoritmos y Programación III/Principios de Diseño/SRP, Single Responsibility Principle.md",
+    "Algoritmos y Programación III/Pruebas de Software/Pruebas de Verificación.md",
+    "Algoritmos y Programación III/Principios de Diseño",
+    "Algoritmos y Programación III/Pruebas de Software/images/Pasted image 20240131163316.png",
+    "Algoritmos y Programación III/Pruebas de Software/images/Pasted image 20240131163252.png",
+    "Algoritmos y Programación III/Pruebas de Software/images/Pasted image 20240131153909.png",
+    "Algoritmos y Programación III/Pruebas de Software/images",
+    "Algoritmos y Programación III/Pruebas de Software",
+    "Algoritmos y Programación III/Programación Orientada a Objetos/images/Pasted image 20240130223158.png",
+    "Algoritmos y Programación III/Pilares de las Clases/images/Pasted image 20240129192046.png",
+    "Algoritmos y Programación III/Pilares de las Clases/images/Polimorfismo paramétrico.png",
+    "Algoritmos y Programación III/Pilares de las Clases/images/Polimorfismo coerción.png",
+    "Algoritmos y Programación III/Pilares de las Clases/images/Polimorfismo por sobrecarga.png",
+    "Algoritmos y Programación III/Pilares de las Clases/images/Clase abstracta.png",
+    "Algoritmos y Programación III/Pilares de las Clases/images/Jerarquía de herencias.png",
+    "Algoritmos y Programación III/Pilares de las Clases/images",
+    "Algoritmos y Programación III/Pilares de las Clases",
+    "Algoritmos y Programación III/Programación Orientada a Objetos/images",
+    "Algoritmos y Programación III/Programación Orientada a Objetos",
     "Untitled.canvas"
   ]
 }
