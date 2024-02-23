@@ -1,0 +1,7 @@
+- [[Principios de Diseño|Principio de diseño]] que promueve la reducción de la duplicación de toda "pieza de información", abarcando: 
+	- datos almacenados en una base de datos
+	- código fuente de un programa de software
+	- información textual o documentación. 
+- Cuando el principio DRY se aplica de forma eficiente, los cambios en cualquier parte del proceso requieren ediciones **en un único lugar**.
+- Este principio busca evitar la duplicación innecesaria de información en el sistema, ya que esto puede aumentar la complejidad, reducir la cohesión y dificultar la mantenibilidad del software.
+- En lugar de eso, el principio DRY propone que cada pieza de información debe tener una única fuente de autoridad, y cualquier cambio en esta información debe reflejarse en todas las partes del sistema que la utilizan

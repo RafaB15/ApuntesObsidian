@@ -1,0 +1,4 @@
+- Si intento colocar una ficha en una celda ocupada, el programa debe impedirlo. 
+- Si quiero jugar dos veces seguidas sin esperar que juegue el adversario, el programa debe impedirlo.
+- Si coloco una cruz en un casillero, esa cruz debe permanecer allí hasta el final del juego. 
+- Si al colocar una cruz o círculo quedan tres cruces o círculos en línea, el usuario que jugó acaba de ganar y el juego debe terminar.

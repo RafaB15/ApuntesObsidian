@@ -1,0 +1,9 @@
+- Las pruebas son una disciplina característica del desarrollo de software. Son una actividad de control de la calidad (QC = Quality Control)
+- Las pruebas solo tienen el objetivo de detectar errores; y cuando los detecten, se deberá mejorar la calidad del producto.
+- Hay prácticas de aseguramiento de la calidad (QA = Quality Assurance) para mejorar el proceso de desarrollo con vistas a que el producto final tenga mejor calidad: DevOps, CI/CD (integración continua/entrega continua), etc.
+- Hay distintos tipos de pruebas:
+	- [[Pruebas de Verificación]]
+	- [[Pruebas de Validación]]
+	- [[Pruebas Funcionales]]
+	- [[Pruebas de Atributos de Calidad]]
+- Una técnica muy importante es el [[Test Driven Development]]

@@ -1,0 +1,5 @@
+- [[Principios de Diseño|Principio de diseño]] que propone que la mayoría de sistemas funcionan mejor si se mantienen simples que si se hacen complejos. 
+- Por ello, la simplicidad debe ser mantenida como un objetivo clave del diseño, y cualquier complejidad accidental debe ser evitada.
+- El mantenimiento de las clases con dependencias implícitas resulta más difícil que el de aquellas con dependencias explícitas. 
+- Con EDP, se puede reducir el acoplamiento y aumentar la cohesión de las clases y métodos, lo que facilita la reutilización del código y su mantenimiento. 
+- Al requerir explícitamente las dependencias, se hace más fácil la comprensión del flujo de datos dentro del sistema y se reducen las sorpresas y errores en tiempo de ejecución

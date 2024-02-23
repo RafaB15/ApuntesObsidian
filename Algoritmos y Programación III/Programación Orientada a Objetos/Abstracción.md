@@ -1,0 +1,2 @@
+- Simplificación que incluye solo aquellos detalles relevantes para determinado propósito y descarta los demás.
+- La [[Programación Orientada a Objetos]] modelo con la precisión **estrictamente** necesaria la realidad, representando [[Objeto|objetos]] con los datos únicamente necesarios para nuestro fin.

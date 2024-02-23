@@ -1,0 +1,1 @@
+Representación de un sistema del mundo real que resulta de llevar a cabo el proceso de [[Algoritmos y Programación III/Programación Orientada a Objetos/Abstracción|abstracción]].

@@ -1,0 +1,3 @@
+- [[Principios de Diseño|Principio de diseño]] orientado a objetos que propone que cada clase debe tener un único motivo para cambiar. 
+- Un gran número de métodos públicos es un indicio de que una [[Clase|clase]] hace muchas cosas. 
+- Generalmente conviene separar los métodos públicos en distintas clases.

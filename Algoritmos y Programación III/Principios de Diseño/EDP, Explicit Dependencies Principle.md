@@ -1,0 +1,3 @@
+- [[Principios de Diseño|Principio de diseño]] orientado a objetos que propone que los métodos y las clases deben requerir explícitamente (generalmente a través de parámetros de método o parámetros de constructor) cualquier objeto de colaboración que necesiten para funcionar correctamente. 
+- Cuesta más mantener las clases con dependencias implícitas (que usan objetos que existen solo en el código dentro de sus métodos y no en su interfaz pública) que aquellas con dependencias explícitas.+
+- Es mejor que recibamos el objeto por parámetro, a que lo instanciemos dentro de la clase. Eso hace que la dependencia sea **explícita**, pues está el tipo en la firma.

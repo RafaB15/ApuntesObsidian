@@ -1,0 +1,7 @@
+- [[Principios de Diseño|Principio de diseño]] orientado a objetos que propone que un método **f** de una clase **C** solo debería invocar métodos de: 
+	- La propia clase **C** 
+	- Los objetos que son atributos de **C**
+	- Los objetos recibidos por **f** como argumentos
+	- Los objetos instanciados en **f**. 
+- No se deberían invocar los métodos de un objeto retornado por otro método.
+- Deberíamos siempre conocer el objeto al que le estamos mandando un mensaje. Deberíamos ponerlo en una variable con el tipo adecuado.

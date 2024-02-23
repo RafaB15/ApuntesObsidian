@@ -1,0 +1,3 @@
+- [[Principios de Diseño|Principio de diseño]] que propone no agregar nunca una funcionalidad excepto cuando sea necesaria. 
+- Es fundamental resistir la tentación de escribir código que no es necesario, pero que podría serlo en el futuro.
+- Esto no significa que debamos sacrificar la flexibilidad y la escalabilidad del sistema. En lugar de eso, podemos utilizar un enfoque de diseño modular y escalable, donde cada componente o módulo se encargue de una única responsabilidad y sea fácilmente extensible en el futuro. De esta manera, podemos mantener el código limpio y modular, y agregar nuevas funcionalidades solo cuando sea necesario.

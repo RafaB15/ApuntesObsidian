@@ -1,0 +1,6 @@
+- [[Principios de Diseño|Principio de diseño]] orientado a objetos que propone que la interfaz de un objeto solo proporcione su comportamiento esencial, nada más.
+- La implementación de este principio de diseño en el desarrollo de software puede resultar en una mayor modularidad y flexibilidad en el sistema. 
+- Al diseñar una interfaz que solo exponga los métodos esenciales, se puede reducir la complejidad y aumentar la cohesión en la estructura del sistema, lo que facilita el mantenimiento y la escalabilidad. 
+- Es esencial para lograr un diseño de software orientado a objetos eficiente y sostenible. 
+- Al limitar la exposición de la interfaz a solo los métodos necesarios, se pueden lograr sistemas de software más modular, flexibles y fáciles de mantener y escalar
+- Por ejemplo: Si la interfaz Vehículo declara el método estacionar y la clase Auto define además los métodos arrancar, frenar, transferir, lavar, etc., al Valet de un hotel le pasaríamos un Vehículo, no un Auto.

@@ -1,0 +1,5 @@
+- Conjuntos de [[Objeto|objetos]] que tienen el mismo comportamiento, por lo que entienden los mismos mensajes y responden de la misma manera. Si no fuese así, no diríamos que son de la misma clase.
+- Cuando la POO está implementada con clases, es en la definición de estas que el programador implementa el comportamiento de los objetos que se crearán a partir de ellas. 
+- En estos lenguajes, todos los [[Objeto|objetos]] son instancias de clases.
+- Java tiene interfaces, que declaran métodos pero no los implementa. También se los conoce como clases abstractas.
+- Se pueden representar con [[Diagrama de Clases|diagramas de clases]].

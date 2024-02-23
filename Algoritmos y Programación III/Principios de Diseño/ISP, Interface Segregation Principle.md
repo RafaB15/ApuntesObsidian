@@ -1,0 +1,2 @@
+- [[Principios de Diseño|Principio de diseño]] orientado a objetos que propone que deben crearse pequeñas interfaces específicas para los clientes en lugar de una general. 
+- De este modo, quienes implementen una interfaz no se verán forzados a implementar partes (métodos o propiedades) que no les sean útiles.

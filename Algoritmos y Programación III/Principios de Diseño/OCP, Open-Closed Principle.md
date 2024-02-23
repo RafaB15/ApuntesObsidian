@@ -1,0 +1,1 @@
+- [[Principios de Diseño|Principio de diseño]] orientado a objetos que propone que el comportamiento de una [[Clase|clase]] debe estar abierto a la extensión, pero cerrado a la modificación (se debe poder extender sin modificar el código existente).

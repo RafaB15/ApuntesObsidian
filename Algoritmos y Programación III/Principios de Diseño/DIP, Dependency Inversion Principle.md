@@ -1,0 +1,3 @@
+- [[Principios de Diseño|Principio de diseño]] orientado a objetos que propone que: 
+	- Los módulos de alto nivel no deberían depender de módulos de bajo nivel. Ambos deberían depender de abstracciones.
+	- Las abstracciones no deberían depender de detalles (implementaciones concretas). Los detalles deberían depender de abstracciones.
