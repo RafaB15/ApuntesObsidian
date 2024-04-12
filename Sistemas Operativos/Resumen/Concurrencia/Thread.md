@@ -1,10 +1,10 @@
 - Un thread (hilo) es un punto de ejecución en un programa con múltiples hilos de ejecución.
 - Es  una secuencia de ejecución atómica que representa una tarea planificable de ejecución.
-- Se parece a un [[Proceso|proceso]] en que:
+- Se parece a un [[Sistemas Operativos/Resumen/Proceso|proceso]] en que:
 	- Tiene un program counter (PC) que sigue desde donde se están obteniendo (fetching) instrucciones.
 	- Cada thread tiene un set de registros que usa para computación.
 	- Debido a esto, al cambiar de un thread $T_1$ a uno $T_2$ se realiza un **context switch** parecido al que se hace al cambiar de procesos.
-- La diferencia entre un thread y un [[Proceso|proceso]] es que:
+- La diferencia entre un thread y un [[Sistemas Operativos/Resumen/Proceso|proceso]] es que:
 	- Comparte el mismo [[Address Space|espacio de memoria]] que el resto de los threads, por lo que puede acceder a los mismos datos.
 		- Memoria.
 		- File descriptors
@@ -16,7 +16,7 @@
 	- En un proceso multi-thread, cada thread va a tener su propio [[Stack|stack]] (call stack).
 
 	![[Stack de un proceso con múltiples threads.png]]
-- En resumen, mientras que un [[Proceso|proceso]] es un programa en ejecución con derechos restringidos, thread es una secuencia independiente de instrucciones ejecutándose dentro de un programa.
+- En resumen, mientras que un [[Sistemas Operativos/Resumen/Proceso|proceso]] es un programa en ejecución con derechos restringidos, thread es una secuencia independiente de instrucciones ejecutándose dentro de un programa.
 - Cada thread corre en un procesador virtual dedicado (exclusivo) con una velocidad variable e impredecible. El orden en el que se ejecutan las instrucciones atómicas es determinado por el **thread scheduler**.
 - Estados de un thread:
 	- INIT: Se está inicializando el thread.

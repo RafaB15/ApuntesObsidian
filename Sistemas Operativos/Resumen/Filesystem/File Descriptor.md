@@ -1,4 +1,4 @@
-- Es un integer privado (privado de cada [[Proceso|proceso]]) que es utilizado en sistemas Unix para acceder a [[Archivo|archivos]].
+- Es un integer privado (privado de cada [[Sistemas Operativos/Resumen/Proceso|proceso]]) que es utilizado en sistemas Unix para acceder a [[Archivo|archivos]].
 - Cada proceso tiene una tabla de file descriptors.
 - Por default, los 3 file descriptors con los que empieza un proceso creado por el kernel son:
 	- 0 $\to$ stdin
