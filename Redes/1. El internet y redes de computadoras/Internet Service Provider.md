@@ -1,0 +1,5 @@
+- Proveedores de servicios de internet.
+- Cada ISP es una rad de [[Packet Switches]] y [[Communication Links]].
+- Proveen una variedad de accesos a la red para diferentes [[End System|end systems]], ya sea por router o por wifi.
+- Los **lower tier** ISPs se interconectan a través de **higher tier** ISPs. Un **upper tier ISP** consiste en routers de alta velocidad interconectados a través de links de fibra óptica.
+- Cada red ISP se maneja independientemente, ejecuta el [[Internet Protocol|protocolo IP]] y sigue ciertas convenciones de nombre y address.

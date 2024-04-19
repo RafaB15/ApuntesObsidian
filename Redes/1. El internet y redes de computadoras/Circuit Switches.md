@@ -1,0 +1,6 @@
+- Estos toman un [[Paquete|paquete]] que les llega por uno de sus incoming [[Communication Links|communication links]] recibidores y lo redirecciona por alguno de sus outgoing communication links.
+- A diferencia de los [[Packet Switches]], que tienen que esperar a que esté libre el buffer de un [[Communication Links|link]] para poder mandar un mensaje, en [[Red|redes]] con circuit switches los recursos están reservados durante la duración de la comunicación. Sería como comparar ir a un restaurante por orden de llegada e ir con reserva.
+- También en una conexión por circuit switches el transmission rate es constante y se establece en base a las capacidades de los diferentes [[Communication Links]] involucrados la momento de hacer la conexión para que todos usen el mismo independientemente de su capacidad máxima.
+- Se usaba en redes de teléfono tradicionales.
+- Tiene el problema de que como la conexión está reservada, en **silent periods** donde se paró de transmitir información (en una llamada una persona dejó de emitir sonido) los recursos no pueden ser utilizados por algún otro programa que los necesite.
+- Otro problema suele ser que establecer una conexión con circuit switches y coordinar la reserva de los recursos suele ser más complejo que packet switching.

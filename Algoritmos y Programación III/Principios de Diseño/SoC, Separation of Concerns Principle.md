@@ -1,2 +1,2 @@
-- [[Principios de Diseño|Principio de diseño]] que propone separar un sistema informático en partes distintas, tal que cada parte se enfoca una funcionalidad o un interés delimitado. 
+- [[Algoritmos y Programación III/Principios de Diseño/Principios de Diseño|Principio de diseño]] que propone separar un sistema informático en partes distintas, tal que cada parte se enfoca una funcionalidad o un interés delimitado. 
 - Por ejemplo, la "lógica de negocios" del software es una preocupación, y la interfaz a través de la cual una persona utiliza esta lógica es otra. Cambiar una no debe requerir cambiar la otra.

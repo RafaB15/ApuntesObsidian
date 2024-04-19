@@ -1,4 +1,4 @@
-- [[Principios de Diseño|Principio de diseño]] que promueve la reducción de la duplicación de toda "pieza de información", abarcando: 
+- [[Algoritmos y Programación III/Principios de Diseño/Principios de Diseño|Principio de diseño]] que promueve la reducción de la duplicación de toda "pieza de información", abarcando: 
 	- datos almacenados en una base de datos
 	- código fuente de un programa de software
 	- información textual o documentación. 

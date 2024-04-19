@@ -1,0 +1,2 @@
+- Se refiere a la secuencia de [[Communication Links]] y [[Packet Switches]] siendo atravesada por un [[Paquete|paquete]] proveniente de un [[End System|end system]] mensajero a uno que reciba el mensaje 
+- Se conoce como una **ruta** (route) o **camino** (path) a través de la [[Red|red]] (network).

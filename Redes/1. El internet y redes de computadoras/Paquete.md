@@ -1,0 +1,4 @@
+- **Packet**
+- Es un fragmento de los datos que un [[End System|end system]] manda a otro.
+- Tiene header bytes que contienen información acerca de como reensamblarse con otros paquetes al llegar al destinatario.
+- Al viajar por la red, estos son redireccionados hasta el destinatario por los [[Packet Switches]].

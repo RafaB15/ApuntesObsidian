@@ -1,0 +1,7 @@
+- Siglas **IP**
+- Es un protocolo que existe en la [[Network Layer|capa de red]].
+- Especifica el formato de los [[Paquete|paquetes]] que son transmitidos y recibidos por los [[Packet Switches|routers]] y [[End System|end systems]].
+- Provee comunicación lógica entre dos [[End System|hosts]].
+- Su modelo de servicio es **best-effort**, por lo que no hace garantías de que los mensajes van a llegar.
+- Debido a esto es un **unreliable service**.
+- Tiene dos versiones, [[IPv4]] y [[IPv6]]

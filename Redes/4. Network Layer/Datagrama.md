@@ -1,0 +1,1 @@
+- Son los paquetes que se envían en la [[Network Layer|capa de red]].

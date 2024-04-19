@@ -1,4 +1,4 @@
-- [[Principios de Diseño|Principio de diseño]] orientado a objetos que propone que un método **f** de una clase **C** solo debería invocar métodos de: 
+- [[Algoritmos y Programación III/Principios de Diseño/Principios de Diseño|Principio de diseño]] orientado a objetos que propone que un método **f** de una clase **C** solo debería invocar métodos de: 
 	- La propia clase **C** 
 	- Los objetos que son atributos de **C**
 	- Los objetos recibidos por **f** como argumentos

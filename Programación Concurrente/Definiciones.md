@@ -1,0 +1,6 @@
+- **Programa:** Conjunto de datos, asignaciones e instrucciones de control de flujo que compilan a instrucciones de máquina, las cuales se ejecutan secuencialmente en un procesador y acceden a datos almacenados en memoria principal o memorias secundarias.
+- **Programa concurrente**: Conjunto de programas secuenciales que pueden ejecutarse en paralelo. Con el scheduler se pueden ejecutar por turnos en un mismo procesador o en varios y hacerlo al mismo tiempo.
+- **Proceso:** Cada uno de los programas secuenciales que conforman el programa concurrente.
+- **Sistema paralelo:** Sistema compuesto por varios programas que se ejecutan simultáneamente en procesadores distintos. Solo se pueden ejecutar si es que se tiene más de un procesador, pues **se tiene** que correr en paralelo.
+- **Multitasking**: ejecución de múltiples procesos concurrentemente en un cierto periodo de tiempo. El scheduler, parte del kernel del sistema operativo, se encarga de coordinar el acceso a los procesadores. 
+- **Multithreading**:  Construcción provista por algunos lenguajes de programación que permite la ejecución concurrente de threads dentro del mismo programa. Al ser threads pueden compartir ciertos recursos, a difernecia del multitasking.

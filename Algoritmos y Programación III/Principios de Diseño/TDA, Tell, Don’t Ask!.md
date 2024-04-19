@@ -1,2 +1,2 @@
-- [[Principios de Diseño|Principio de diseño]] orientado a objetos en el que se basa la buena práctica de evitar solicitarle a un [[Objeto]] que indique su estado y luego llevar a cabo una acción basándose en este, en lugar de solicitarle al objeto que lleve a cabo la acción él mismo.
+- [[Algoritmos y Programación III/Principios de Diseño/Principios de Diseño|Principio de diseño]] orientado a objetos en el que se basa la buena práctica de evitar solicitarle a un [[Objeto]] que indique su estado y luego llevar a cabo una acción basándose en este, en lugar de solicitarle al objeto que lleve a cabo la acción él mismo.
 - Se prefiere que los atributos sean privados y que las acciones que requieran usarlos las ejecute el objeto.

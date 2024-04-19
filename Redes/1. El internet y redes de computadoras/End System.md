@@ -1,0 +1,8 @@
+- También conocidos como **host**.
+- Es cualquier dispositivo **que se puede conectar al internet**
+- Puede ser una computadora, laptop, teléfono inteligente, tableta, TV, consola de videojuegos, termostato, sistema de seguridad, aparatos para el hogar, relojes, etc.
+- Se les dice end systems porque yacen al final de la conexión en la [[Red|red]].
+- Los end systems acceden al internet a través de un [[Internet Service Provider]] **Internet Service Provider** (ISP).
+- Cada end system tiene una **dirección IP**.
+- Al un end system mandar un [[Paquete|paquete]], se pone la dirección IP del destinatario en el header.
+- Los end systems conectados a internet proveen una interfaz de bolsillo (socket interface) para que otros end systems puedan enviarles datos. Es básicamente un conjunto de reglas que el end system que quiere mandar información tiene que seguir para que esta llegue al otro end system. Cada end system elige uno de los muchos protocolos para saber como se comunicarán otros con el.

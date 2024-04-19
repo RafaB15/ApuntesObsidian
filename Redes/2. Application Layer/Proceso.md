@@ -1,0 +1,6 @@
+- Un proceso es un programa ejecutándose en un [[End System|end system]].
+- Cuando los procesos son ejecutados en el mismo host, se pueden comunicar entre ellos con **comunicación inter-proceso**, usando reglas que dependen del sistema operativo.
+- Los procesos en dos [[End System|end systems]] distintos se comunican intercambiando **mensajes** a través de la [[Red|red]]. 
+- Un proceso envía mensajes y el toro los recibe y los pueden responder.
+- En cada par de procesos comunicándose, normalmente a uno se lo denomina **servidor** y al otro **cliente**. El cliente vendría a ser el que inicia la comunicación, mientras que el servidor sería el que espera a recibir un mensaje.
+- Un proceso manda mensajes a y recibe mensajes de la red a través de una interfaz de software llamada [[Socket|socket]].

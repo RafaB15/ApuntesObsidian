@@ -1,0 +1,4 @@
+- Una instrucción que no se puede dividir.
+- Puede:
+	- Ejecutarse de principio a fin sin interrupciones.
+	- No ejecutarse.

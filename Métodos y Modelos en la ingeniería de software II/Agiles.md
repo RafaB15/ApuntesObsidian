@@ -1,0 +1,1 @@
+- Los métodos ágiles requieren del involucramiento del cliente.

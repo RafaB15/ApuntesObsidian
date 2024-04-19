@@ -1,0 +1,4 @@
+- Los procesos se ejecutarán al mismo tiempo, pero habrá ciertos conjuntos de procedimientos tales que solo una ejecución de un procedimiento en cada se permite que suceda a la vez.
+- Si se está ejecutando algún procedimiento en el conjunto, entonces cualquier otro proceso que intente ejecutar cualquier procedimiento en el conjunto será obligado a esperar hasta que la primera ejecución haya terminado
+- Serializar para controlar el acceso a las variables compartidas
+- Podemos marcar regiones de código que no pueden superponerse en la ejecución al mismo tiempo.

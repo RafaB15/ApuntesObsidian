@@ -1,0 +1,3 @@
+- El número de puerto es una parte del identificador único de un [[Socket|socket]] dentro de un [[End System|host]]. 
+- Es un número de 16 bits que puede ir de 0 a 65535.
+- Los puertos de 0 a 1023 son conocidos como números de puerto muy conocidos y se reservan para protocolos conocidos comúnmente usados, como el 80 para [[HyperText Transfer Protocol|HTTP]].

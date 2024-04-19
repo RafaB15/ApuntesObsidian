@@ -9,5 +9,5 @@
 - [[EDP, Explicit Dependencies Principle]]
 - [[KOP, Knuth's Optimization Principle]]
 - [[SoC, Separation of Concerns Principle]]
-- [[SOLID, SRP, OCP, LSP, ISP, DIP]]
+- [[SOLID]]
 - [[FIRST, Fast, Independent, Repeatable, Self-checking, Timely]]

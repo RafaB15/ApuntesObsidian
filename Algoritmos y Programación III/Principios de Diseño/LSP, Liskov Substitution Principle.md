@@ -1,1 +1,1 @@
-- [[Principios de Diseño|Principio de diseño]] orientado a objetos que propone que los [[Objeto|objeto]] de las subclases deben poder sustituir a las instancias de las superclases sin alterar el correcto funcionamiento del programa.
+- [[Algoritmos y Programación III/Principios de Diseño/Principios de Diseño|Principio de diseño]] orientado a objetos que propone que los [[Objeto|objeto]] de las subclases deben poder sustituir a las instancias de las superclases sin alterar el correcto funcionamiento del programa.

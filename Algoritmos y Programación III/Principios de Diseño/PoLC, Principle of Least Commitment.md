@@ -1,4 +1,4 @@
-- [[Principios de Diseño|Principio de diseño]] orientado a objetos que propone que la interfaz de un objeto solo proporcione su comportamiento esencial, nada más.
+- [[Algoritmos y Programación III/Principios de Diseño/Principios de Diseño|Principio de diseño]] orientado a objetos que propone que la interfaz de un objeto solo proporcione su comportamiento esencial, nada más.
 - La implementación de este principio de diseño en el desarrollo de software puede resultar en una mayor modularidad y flexibilidad en el sistema. 
 - Al diseñar una interfaz que solo exponga los métodos esenciales, se puede reducir la complejidad y aumentar la cohesión en la estructura del sistema, lo que facilita el mantenimiento y la escalabilidad. 
 - Es esencial para lograr un diseño de software orientado a objetos eficiente y sostenible. 

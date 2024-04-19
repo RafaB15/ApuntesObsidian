@@ -1,3 +1,3 @@
-- [[Principios de Diseño|Principio de diseño]] que propone que no se refactorice el código que aún no funciona completamente. 
+- [[Algoritmos y Programación III/Principios de Diseño/Principios de Diseño|Principio de diseño]] que propone que no se refactorice el código que aún no funciona completamente. 
 - The real problem is that programmers have spent far too much time worrying about efficiency in the wrong places and at the wrong times; premature optimization is the root of all evil (or at least most of it) in programming.
 - Es importante tener en cuenta que esto no significa que la optimización no sea importante, sino que debe ser realizada en el momento adecuado y no como una prioridad inicial. El principio de diseño KOP nos recuerda la importancia de mantener una perspectiva a largo plazo y evitar la tentación de hacer optimizaciones innecesarias que podrían afectar negativamente la calidad del código.

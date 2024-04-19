@@ -1,0 +1,5 @@
+- El pathname es la dirección de un recurso dentro de un [[Hostname|hostname]].
+- Normalmente lo vemos en conjunto con el [[Hostname|hostname]]
+- Ej: http://www.someschool.edu/someDepartment/picture.gif
+	- Hostname: www.someschool.edu
+	- Pathname: /someDepartment/picture.gif

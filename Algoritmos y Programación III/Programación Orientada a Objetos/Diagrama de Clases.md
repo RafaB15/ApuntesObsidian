@@ -4,7 +4,7 @@
 - En ocasiones no usamos las tres divisiones, sino solo dos (eliminando los atributos) o una (solo con el nombre de la clase) 
 - Los atributos y métodos privados se pueden indicar precedidos de un signo -, los públicos del signo + y los protegidos del signo # 
 - No es conveniente utilizar aspectos de la sintaxis que tengan un significado solo en determinado lenguaje.
--![[Diagrama de clases 1.png]]
+![[Diagrama de clases 1.png]]
 ![[Pasted image 20240126234916.png]]
 
 - El profesor tiene una colección llamada cursos y cada elemento de es colección es un Curso.

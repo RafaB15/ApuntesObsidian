@@ -1,1 +1,1 @@
-- [[Principios de Diseño|Principio de diseño]] para pruebas que es el acrónimo de las cinco características que deben tener nuestros tests unitarios para ser considerados pruebas con calidad.
+- [[Algoritmos y Programación III/Principios de Diseño/Principios de Diseño|Principio de diseño]] para pruebas que es el acrónimo de las cinco características que deben tener nuestros tests unitarios para ser considerados pruebas con calidad.

@@ -1,0 +1,2 @@
+- Es el límite entre un [[End System|end system]] o un [[Router|router]] con un [[Communication Links|link]] capaz de transmitir [[Datagrama|datagramas]] de la [[Network Layer|capa de red]].
+- Cada uno tiene una [[Dirección IP|dirección IP]] asignada que tiene que ser globalmente única.

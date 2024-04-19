@@ -13,4 +13,4 @@ Algoritmo para descomponer una relación de forma que cumpla con FNBC.
 **Output**: Una [[Base de Datos/Diseño Relacional/Descomposición|descomposición]] de *R*, $D = (R_1, R_2, \dots, R_n)$ que preserva la información, y está en FNBC.
 ![[Base de Datos/Diseño Relacional/images/Algoritmo FNBC.png]]
 
-- No preserva las dependencias funcionales, pero preserva la información.
+- No preserva las dependencias funcionales, pero preserva la información. 

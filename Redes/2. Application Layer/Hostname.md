@@ -1,0 +1,5 @@
+- El **hostname** es un alias que se le puede dar a un [[Domain Name System|servidor DNS]] para que nos lo traduzca a una **dirección IP**.
+- Normalmente lo vemos en conjunto con el [[Pathname|pathname]].
+- En http://www.someschool.edu/someDepartment/picture.gif
+	- Hostname: www.someschool.edu
+	- Pathname: /someDepartment/picture.gif
