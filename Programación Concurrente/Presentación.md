@@ -1,0 +1,14 @@
+- Introducimos el token ring de robots mostrando únicamente el order token
+	- Explicando la estructura de los robots como actores y con sus conexiones. (Marcos)
+	- Mostramos que podemos agregar robots al ring dinámicamente. (Rafa). Al empezar, si el robot está solo, esté lanza los tokens y se los pasa a sí mismo. Cuando otro robot se le conecta, entonces se empiezan a mandar los tokens entre sí. Podemos agregar un tercero y hará lo mismo.
+	- Mostramos que si se cae un robot se ve que los otros dos empiezan a pasarse el token entre ellos. (Lauti)
+	- Vemos que podemos levantar de nuevo el robot caído (se manda un mensaje para conectarse y se acomodan de forma tal que vuelven a quedar en orden). (Marcos)
+- Pasamos a mostrar la screen 
+	- Explicamos el formato elegido para los helados (Rafa)
+	- Mostramos que las pantallas se conectan a un gateway por TCP. (Lauti)
+	- Explicamos que mandan un mensaje a un robot con TCP para garantizar que llegó. (Marcos)
+- Mostramos que los robots se dividen las órdenes y van lockeando los diferentes sabores por el tiempo definido en la orden. (Rafa)
+- Vemos que al terminar a la pantalla le llega un mensaje para commitear la orden y al gateway le sale pago confirmado. (Lauti)
+- Si no hay suficiente helado entonces el pedido se cancela. (Lauti)
+- Mostramos el caso en que se cae una pantalla y se confirma la orden igual. (Marcos)
+- Mostramos el caso en el que se cae un robot con pedidos y estos son tomados por otro robot en vez de ser cancelados. (Rafa)

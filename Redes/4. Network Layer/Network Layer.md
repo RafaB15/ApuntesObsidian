@@ -13,14 +13,14 @@
 
 -  **Redireccionar**
 	- Forwarding
-	- Se implementa en el data plane.
+	- Se implementa en el **data plane**.
 	- Cuando un paquete llega al input link de un router, el router lo tiene que mover al output link apropiado.
 	-  Se refiere a lo que sucede localmente dentro de un router al mover un paquete de un link a otro.
 	- Sucede en nanosegundos
 	- Se puede implementar en el hardware.
 - **Rutear**
 	- Routing
-	- Se implementa en el control plane.
+	- Se implementa en el [[Control Plane|control plane]].
 	- La capa de red debe determinar la ruta o camino tomado por los paquetes mientras estos fluyen de un emisor a un receptor.
 	- Los algoritmos que los determinan se conocen como routing algorithms.
 	- Se refiere a los caminos end-to-end que toman los paquetes al ser enviados 

@@ -1,0 +1,2 @@
+- En un mismo CPU, se dividen los registros para poder poner varios datos en ellos (en n registro de 512 bits podemos poner 16 enteros de 32 bits por ejemplo, o 32 de 16 bits).
+- Luego, en vez de usar varios CPU cores, se pondrán las distintas operaciones en varias ALUs.

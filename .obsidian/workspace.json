@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "0d5cf7465b95c731",
+        "id": "6999325214fcd4c5",
         "type": "tabs",
         "children": [
           {
-            "id": "a0fd2cdbf93b086e",
+            "id": "303e37b22cee511f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redes/4. Network Layer/Dirección IP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2b60b1e80a408e23",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Redes/3. Transport Layer/Transmission Control Protocol.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e4c46e40863ebfb3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Redes/4. Network Layer/IPv4.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8fea4b7e0dc1ac1b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Redes/4. Network Layer/IPv6.md",
+                "file": "Programación Concurrente/Correcciones.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "router",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 311.5,
-    "collapsed": true
+    "width": 311.5
   },
   "right": {
     "id": "01852ddd4215bf20",
@@ -123,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Redes/4. Network Layer/IPv6.md",
+                "file": "Programación Concurrente/Correcciones.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Redes/4. Network Layer/IPv6.md",
+                "file": "Programación Concurrente/Correcciones.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Redes/4. Network Layer/IPv6.md"
+                "file": "Programación Concurrente/Correcciones.md"
               }
             }
           },
@@ -196,44 +158,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8fea4b7e0dc1ac1b",
+  "active": "303e37b22cee511f",
   "lastOpenFiles": [
-    "Redes/4. Network Layer/images/Pasted image 20240418223922.png",
-    "Redes/4. Network Layer/IPv4.md",
-    "Redes/4. Network Layer/IPv6.md",
-    "Redes/3. Transport Layer/Transmission Control Protocol.md",
-    "Redes/4. Network Layer/images/IPv6 Datagram.png",
-    "Redes/4. Network Layer/Dirección IP.md",
-    "Redes/4. Network Layer/Internet Protocol.md",
-    "Redes/4. Network Layer/Network Address Translation.md",
-    "Redes/4. Network Layer/images/NAT.png",
-    "Redes/1. El internet y redes de computadoras/End System.md",
-    "Redes/2. Application Layer/Socket.md",
-    "Redes/4. Network Layer/Network Layer.md",
-    "Métodos y Modelos en la ingeniería de software II/Teórica virtual 1.md",
-    "Métodos y Modelos en la ingeniería de software II/images/Pasted image 20240415101930.png",
-    "Métodos y Modelos en la ingeniería de software II/images/Pasted image 20240415101604.png",
-    "Métodos y Modelos en la ingeniería de software II/images/Pasted image 20240415101441.png",
-    "Métodos y Modelos en la ingeniería de software II/images/Pasted image 20240415101214.png",
-    "Métodos y Modelos en la ingeniería de software II/images/Pasted image 20240415093500.png",
-    "Métodos y Modelos en la ingeniería de software II/Persistencia de objetos.md",
-    "Métodos y Modelos en la ingeniería de software II/images/Pasted image 20240415004950.png",
-    "Métodos y Modelos en la ingeniería de software II/images/Pasted image 20240415004803.png",
-    "Métodos y Modelos en la ingeniería de software II/images/Pasted image 20240415003324.png",
-    "Métodos y Modelos en la ingeniería de software II/Agiles.md",
-    "Métodos y Modelos en la ingeniería de software II/DDD Quickly.md",
-    "Redes/3. Transport Layer/User Datagram Protocol.md",
-    "Redes/3. Transport Layer/Transmisión confiable de datos.md",
-    "Métodos y Modelos en la ingeniería de software II/Freeman Lecturas.md",
-    "Redes/4. Network Layer/Interface.md",
-    "Sistemas Operativos/Resumen/Proceso de Compilación.md",
-    "Sistemas Operativos/Resumen/Proceso.md",
-    "Sistemas Operativos/Resumen/Kernel.md",
-    "Redes/4. Network Layer/Datagrama.md",
-    "Redes/4. Network Layer/Router.md",
-    "Redes/4. Network Layer/Untitled 1.md",
-    "Redes/4. Network Layer/Untitled.md",
-    "Redes/3. Transport Layer/Transport Layer.md",
+    "Algoritmos y Programación III/Programación Orientada a Objetos/Diagrama de Clases.md",
+    "Programación Concurrente/Estado Mutable Compartido.md",
+    "Programación Concurrente/Monitores.md",
+    "Programación Concurrente/Sincronización.md",
+    "Programación Concurrente/Programación Concurrente.md",
+    "Programación Concurrente/Modelo de Actores.md",
+    "Programación Concurrente/Locks y Corrección.md",
+    "Programación Concurrente/Concurrencia Distribuida.md",
+    "Programación Concurrente/Correcciones.md",
+    "Programación Concurrente/Definiciones.md",
+    "Programación Concurrente/Algoritmos de Elección de Líder.md",
+    "Programación Concurrente/Transacciones-Deadlocks.md",
+    "Programación Concurrente/Programación asincrónica.md",
+    "Programación Concurrente/Paralelismo fork-join.md",
+    "Programación Concurrente/Instrucción Atómica.md",
+    "Programación Concurrente/Parcial 10-10-23.md",
+    "Programación Concurrente/Presentación.md",
+    "Programación Concurrente/Repaso Parcial.md",
+    "Programación Concurrente/Redes de Petri.md",
+    "Base de Datos/Resumen 2do Parcial.md",
+    "Métodos y Modelos en la ingeniería de software II/Resumen Final.md",
+    "Métodos y Modelos en la ingeniería de software II/images/Pasted image 20240630125343.png",
+    "Métodos y Modelos en la ingeniería de software II/images/Pasted image 20240627223715.png",
+    "Métodos y Modelos en la ingeniería de software II/images/Pasted image 20240627222252.png",
+    "Métodos y Modelos en la ingeniería de software II/images/Pasted image 20240627222249.png",
+    "Métodos y Modelos en la ingeniería de software II/images/Pasted image 20240627190420.png",
+    "Métodos y Modelos en la ingeniería de software II/images/Pasted image 20240627190333.png",
+    "Métodos y Modelos en la ingeniería de software II/TO-DO Paez.md",
+    "Métodos y Modelos en la ingeniería de software II/Rest API.md",
+    "Métodos y Modelos en la ingeniería de software II/TP2.md",
+    "Programación Concurrente/TP2.md",
+    "Base de Datos/Concurrencia y Transacciones/Concurrencia.md",
+    "Redes/images/Pasted image 20240524164735.png",
+    "Redes/images/Pasted image 20240524164716.png",
+    "Redes/images/Pasted image 20240524164702.png",
+    "Redes/images/Pasted image 20240524153520.png",
     "Untitled",
     "Redes/4. Network Layer/images",
     "Redes/images",

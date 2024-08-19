@@ -1,0 +1,33 @@
+- Render no nos sirve para el bot porque lo duerme y no haría el polling.
+
+
+- Tenemos nuestra aplicación y la tenemos que poner a correr en alguna máquina / servidor.
+- El server impone límites de cuanta memoria puede usar. Si el server solo tiene 4 gigas, podés usar solo 4. 
+- Si no nos alcanzan los recursos, tendríamos que tener un server más grande o podríamos escalar horizontalmente y tener varios servidores con un load balancer.
+- Si cumplimos los 12 factores podemos dividir en varios servidores, pero si no se cumple la de stateless entonces no se puede a menos que se tomen precauciones.
+- Es más barato levantar muchas chiquitas que una grande, sin embargo es más complejo.
+- Qué pasa cuando tenemos que actualizar nuestra aplicación? 
+	- Puede darse que la tengamos que bajar, instalar la nueva funcionalidad y luego volver a subirla.
+	- Depende del negocio si esto es aceptable o no. Si están cautivos los usuarios entonces lo podés hacer sin muchos problemas. En otros casos si lo hacés perdés clientes.
+	- Si tenemos 3 servidores, podemos bajar uno para actualizar y dejar los otros dos para que sigan con el servicio. Luego ponemos el servidor actualizado a responder y actualizamos los otros dos.
+	- En reder o heroku te lo resuelven ellos, pero cuando no lo usamos te lo resuelve kubernetes.
+- Tu aplicación ya no corre sobre un servidor, sino que corre sobre Kubernetes. Le decís a Kubernetes que la corra como le decías a render sin pensar en donde, pero tenés control acerca de cóm es el servidor.
+- Le podés decir que necesitás 5 instancias de tu aplicación y tendrás las 5 repartidas en los 3 servers.
+- Le podés poner autoescalado para que haga una nueva instancia si es que está requiriendo más memoria y querés que automáticamente levante otra instancia y otro servidor. Te lleva a un esquema muy parecido a lo que es una plataforma como servicio sin serlo.
+- ¿Puedo correr cualquier aplicación en un Kubernetes? Kubernetes corre una única tecnología: Docker. Por lo que puede correr cualquier cosa que puedas empaquetar dentro de una imagen docker. No le importa en qué está programado lo que está dentro de la imagen.
+- A render le dábamos el repo y render tenía internamente un runtime ruby. Ahora tendremos que a partir de nuestro repositorio, empaquetar nuestro entorno en una imagen docker y darle a kubernetes la imagen para que la corra.
+- Job vacancy tiene una base de datos y eso representa el estado de la aplicación en sí. Entonces tiene **estado**.
+- ¿Como es el tema de kubernetes con base de datos? La base de datos es una aplicación que tiene estado. Meter una base de datos adentro de Kubernetes no es algo trivial.
+- K8s = kubernetes
+- Dentro del Kubernetes pondremos a correr el bot y también el proceso web de la api. La api a su vez necesita de una base de datos. 
+- Esa base de datos va a ser un postgress, que no va a acorrer en k8s, sino que correrá en otro lugar llamado neon.
+- Vamos a usar otro servicio llamado sumoLogic que es un servidor al que mandar los logs. Entonces nos mostrará cuando la app tenga problemas.
+- Necesitaremos un bot distinto para cada ambiente. El entorno local de cada miembro del equipo será distinto (le pasamos un token distinto). Bot Rafa, Bot Burno, Bot Test, Bot Prod.
+- Gitlab creará una instancia de kubernetes.
+- Hay que sacarnos cuenta en neon y sumologic.
+- Kubernetes no es gratuito. Lo apga god Paez y lo administra god Paez. Cuando corra el pipeline en gitlab eso se desplega en Kubernetes. Es normal que no vamos  a acceder a Kubernetes. Ponemos los logs en sumologic para no tener que entrar a Kubernetes pero igual poder ver la información.
+- Neon tiene un free tier más amistoso, por lo que lo usaremos.
+- Docker está en digital ocean. Te da un kubernetes como servicio. 
+- Tener la cuenta de sumologic para todos los miembros de l equipo
+- Tener la cuenta de neon
+- El lunes lo hacemos andar. Jueves siguiente ya vamos a la planning. Este jueves es el discovery. Tenemos que entender el problema a resolver. Acá el product owner no tiene stories, tiene un problema de negocios que necesita resolver. Nosotros tenemos que entender el problema, darle forma, particionar ese problema en sotries, darle forma a esas stories, hablar los criterios de aceptación con el PO y proponerlas.

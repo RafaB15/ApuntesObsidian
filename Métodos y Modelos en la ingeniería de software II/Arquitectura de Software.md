@@ -1,0 +1,55 @@
+- All architecture is design, but not all design is architecture.
+- La elección de lenguaje de programación parece ser de arquitectura, porque tiene diferentes runtimes. Java corre en la JVM.
+- Centralizado o distribuido es de arquitectura.
+- Log4Net o NLog / Hibernate o Drapper. Son frameworks.
+- Android o iOS.
+- **Design Purpose**: Para qué hacemos la arquitectura
+	- Propuesta / preventa de proyecto
+	- Spike / validación
+	- Desarrollo
+- Quality Attributes
+	- Requerimientos NO funcionales.
+	- Técnicas de relevamiento: QAW & Utility Tree
+	- Naturaleza Cross-Cutting.
+- Primary Functionallity
+- Arquitectural Concerns
+	- Instalación / Actualización
+	- Manejo de errores
+	- Monitoreo
+	- Manejo de dependencias
+	- Operación.
+- Constrains
+	- Regulaciones
+	- Licenciamiento
+	- Tecnologías
+	- Hosting
+
+
+- Conceptos de Diseño
+	- Estilo de arquitectura / Patrones
+	- Arquitecturas de referencia
+		- Para cada tecnología en general uno tiene una sugerencia de cómo encarar determinados problemas. Vienen con patrones armados.
+	- Deployment patterns
+		- Patrones de como poner a correr la arquitectura en un lugar.
+	- Tácticas para performance
+		- Estrategias de más alto nivel.
+		- Podés o manejar demanda o manejar recursos
+			- Manejar recursos es asignar más o menos recursos dependiendo de la situación
+			- Manejar la demanda sería por ejemplo lo que hace el siu de que la gente se anote en las materias a diferentes horas.
+	- Componentes desarrollados externamente
+- Estilo de arquitectura
+	- Pipes & Filters
+	- Layers
+	- Model-View-Controller
+	- Blackboard
+
+
+- En qué momento arquitecturamos?
+	- Definirlo muy temprano nos ahorra quilombo, pero menos información tenemos.
+	- Big Design Up Front vs Diseño Emergente
+- Técnica de diseño Emergente
+	- Actividad colectiva
+	- Último momento responsable
+		- Cuanto más tarde puedo tomar la decisión mejor, porque tendremos más información
+	- Spikes
+	- Walking Skeleton.

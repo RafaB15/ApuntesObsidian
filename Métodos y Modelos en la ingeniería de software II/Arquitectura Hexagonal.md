@@ -5,3 +5,7 @@
 - Vemos que con la arquitectura hexagonal las dependencias van hacia adentro, haciendo que sea fácil cambiar nuestra lógica de negocio.
 
 ![[Pasted image 20240406174509.png]]
+
+- La lógica del negocio que estamos modelando está en el centro, y no tiene ninguna dependencia con la infraestructura y la entrada / manejo de entrada salida de información.
+- Tenemos puertos y adaptadores para que se comunique con estos.
+- Clean architecture se basa en esto.

@@ -1,0 +1,77 @@
+- Validaciones en el controller acerca de la password y passwrod confirmation no es lógica de negocio. Es un accidente debido a que estoy en una página web donde la contraseña no se muestra.
+- En job offers controller en el apply sí hay algo de lógica que no está bueno.
+- En un repositorio solo le tendríamos qeu pedir traer cosas, llevar cosas, borrar, hacer update. En el job offer repository hay una llamada deactivate old offers, que no tiene que ver con llevar y traer ofertar. Eso excede la responsabilidad.
+- El repositorio pude filtrar solo por os datos que maneja. Si tiene edad, el repo puede tener un método que sea find by age, o find over age o algo así, pero no find_adult, porque la definición de adulto es de nuestro negocio.
+- Validaciones dentro del repo está bien tenerlas, pero se tiene que validar en el modelo. Si se valida en el repo es extra.
+- El user tiene un problema grave. Se lo puede crear sin ninguna validación. En el constructor no sabés qué le tenés que pasar sin ir y mirar el código fuente. No debería ser un diccionario. Eso es un problema grave. Es un patrón muy común (django, ruby on rails, padrino) pero conceptualemente está re mal.
+- En User se está permitiendo la creación de objetos inválidos. Re mal.
+- Está bien validar que esté bien el mail en user.rb. Es parte del objeto. Esto porque representamos el mail con un string. Si fuera un objeto en sí, entonces podríamos tener validaciones al crearlo.
+- Inconsistencia en como se manejan los errores.
+- Falta de fachada de aplicación.
+- Lo de la variable de ambiente que cambia algo de config está bien, porque es acerca del contexto, tipo local vs no local. Entonces no hay problema porque no tiene que ver con los ambientes, no habrá que cambiar el código, solo tiene que ver con el **modo** en el que se ejecuta la aplicación.
+- Si ponemos padrino console en la terminal, nos abre una termina interactiva con todos los objetos de nuestra aplicación.
+- Job offer y user tienen el problema de que reciben un diccionario. User a su vez tiene el problema de que se puede crear un objeto inválido (job offer a veces).
+- Poner los mensajes de error asociados a nuestro errores, escritos en un idioma de nuestra elección está mal, porque luego el usuario lo ve y no está en su idioma.
+- Está mal que en nuestro código la función para mandar mails tiene acoplamiento con padrino. Que nuestro modelo dependa de cuestiones de infraestructura no está bueno. Los objetos de negocio deberían depender solo de objetos de negocio.
+	- La manera de resolver esto es que nuestro modelo trate con un objeto notificador y que este interactúe con padrino. Así nuestro modelo se separa de la implementación de padrino. Es un adaptador. También es fácil de mockear.
+
+
+- Antes era puro Django, ahora está fast api y flask, que tiene menos magia.
+
+
+
+- Sigue 12 factor app
+	- Codebase -> Complimos. Same desarrollo que production.
+	- Dependencies -> Cumplen por gemfile y bundle
+	- Configuración -> Se settea en render o gitlab
+		- Hay unas cosas que no están del todo bien. Dependiendo del ambiente hay algunas configuraciones hardcodeadas. Eso es debatible pero en términos generales está bastante bien a excepción de una cosa.
+		- Lo que no está bien es en config/app.rb que tiene setteadas cosas de configuración. Session secret es un dato sensible y no debería estar ahí.
+	- Backing services -> Podemos decir que lo cumple.
+		- Las bdd son utilizados como servicios attached. La palicación web se levanta como un proceso y la bdd aparte, que lo comunicamos via red. Tenemos cierta flexibilidad en esos servicios de como los levantamos. Podemos ponerlo en el ambiente que queramos o cambiarle el url. 
+		- Entra también el envío de mail.
+		- Cualquier cambio con esos servicios bastará con cambiar el string de conection.
+	- Build release and run -> Medio.
+		- Cuando hablamos de build hablamos más allá de la compilación.
+		- Typescript tampoco se compila, pero pasa por un proceso de transpilación para pasarlo a js.
+		- En build también tenemos la resolución de dependencias. Sucede en cada lugar donde instalás la app, con lo cual es parte del build y ocurre repetitivamente en cada ambiente.
+		- A render le podríamos dar una imagen docker que tenga las dependencias ya resueltas.
+	- Processes -> Si cumple, las cookies van y vienen pero lo resuelve el framework. **No** cumple al tener estado de sessión.
+		- La bdd es un proceso aparte.
+		- La aplicación es el código ruby y ese proceso debería no tener estado.
+		- La bdd no entra dentro de este principio.
+		- El protocolo HTTP no tiene estado. Cada request es independiente de lo que tiro antes.
+		- En la aplicaciones web, los requests son independientes a los anteriores? No, porque podrías estar loggueado y eso hace que tengas estado. 
+		- Guardamos el estado en algún extremo de la comunicación para usarlo. Pero no lo podemos guardar en el server, tendríamos que guardarlo en el estado de la sesión. En web development se guarda con las cookies, si te logueas, entonces esa cookie se manda con cada request para que te identifiquen como usuario que se logueó. Este principio nos dice que no lo guardemos en el proceso, porque si se cae el proceso por la razón que sea perdés la información. 
+		- El proceso no tiene estado, puede acceder a este a través de otros métodos.
+		- En job vacancy, los usuarios están en la base de datos, pero se tiene una variable con info de una session que está guardada en memoria.
+	- Asignación de puertos -> Lo tenemos en una variable de ambiente.
+	- Concurrencia -> No cumple
+		- Nuestro web server es "thin".
+		- Al escalar lo podemos hacer via procesos o via threads.
+	- Desechabilidad -> Creo que sí
+		- Queremos que haga un graceful shutdown
+		- Depende más de la infraestructura, de nuestro web server.
+		- Este muere de forma feliz y liberando los recursos allocados.
+		- Podés matar al proceso a lo sisop o le mandás un mensaje al proceso para que termine y este se suicida.
+	- Paridad en desarrollo y producción -> Si.
+		- Las diferencias no tienen que ver con la entrega continua.
+		- Esto excede eso y va más por el que la configuración en los ambientes sea igual.
+		- Como trabajamos con CD, entonces no hay un gran gap entre nuestras releases, y es poquito código.
+		- En términos de backing services, es bastante parejo porque en todos los casos usamos postgress. En el envío de mails usamos gmail.
+	- Logs -> Lo hace el framework
+		- No habla de loguear o no loguear
+		- Se habla de que se trate como un stream de eventos.
+		- Se está escribiendo al std output. Si utilizáramos el logger haría lo mismo.
+		- No cumplimos esto si utilizamos un log que tire los logs en otro lado.
+		- La práctica hoy es tirarlo a stdoutput y que otro lo redirija. 
+		- Stream es tirar eventos al mismo lugar y alguien más se encarga de procesarlos. No queremos escribir los logs en un archivo.
+	- Admin processes -> Sip.
+		- Las migrations se corren cada vez que hago deploy, pero por como funcionan, a pesar de correrlas todo el tiempo no están haciedno cambios.
+		- No está tan bueno que en el script de start_app dispare el proceso de correr las migrations y levantar las aplicaciones. Debería estar explicitado aparte.
+
+- TP2 bot de telegram.
+- Es bastante más complejo que este.
+- De entrada hay dos procesos, hay un bot y hay una api.
+- El bot habla con la api y esta también la tenemos que hacer nosotros.
+- Programar el bot es completamente distinto a hacer la api.
+- El jueves durante la clase cada uno de nosotros vamos a crear nuestro propio bot y poder chatearle, hacer una implementación bastante pava, hacer algunos tests y consumir una api externa.

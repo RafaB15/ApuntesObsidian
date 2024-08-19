@@ -1,4 +1,4 @@
-- En el diseño orientado a objetos, reconocer la semejanza entre las cosas nos permite exponer los puntos en común dentro de abstracciones. 
+- En el diseño orientado a objetos, reconocer la semejanza entre las cosas nos permite exponer los puntos en común dentro de [[Algoritmos y Programación III/Pilares de las Clases/Abstracción|abstracciones]]. 
 - La identificación de [[Clase|clases]] y [[Objeto|objetos]] implica tanto el descubrimiento como la invención. 
 	- A través del descubrimiento, llegamos a reconocer las abstracciones que forman el vocabulario del dominio del problema. 
 	- A través de la invención, ideamos abstracciones generalizadas.

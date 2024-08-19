@@ -1,0 +1,151 @@
+- Interfaz por consola
+- Actores
+- No hacer solo cliente servidor.
+- El polling del async se ejecutaba sobre el thread principal si es que está configurado para hacerse así
+- Colaborativo -> Como sucede el traspaso del control
+- El contrario de piñata es reactivo. Si async no tiene más remedio que hacer un montón de polls lo hace.
+
+- Hay que modelar el contenedor de los gustos. Una aplicación, estado compartido entre todas las aplicaciones.
+- Si a un robot le sucede algo (control c) tiene que haber resiliencia.
+- Primera entrega:
+	- Entrega de diseño
+	- En el readme tenemos que armar un diseño de la solución
+	- Que herramientas vamos a usar.
+	- Como las vamos a usar
+	- Que clases o estructuras van a intervenir
+	- Que procesos va a haber
+	- Qué threads o tareas van a haber
+	- Como se van a comunicar entre ellos
+	- Que mensajes se van a mandar entre ellos.
+	- Ejemplo medio medio: Vamos a implementar un worlock mezclado con un bully , para los robots el bully y para cobrar el worlock. Una exclusión mutua en anillo para modelar los tachos.
+	- Vamos a hacer que los robots no se choquen porque verificamos tal y tal
+	- Lo podemos presentar hasta el 12 de junio. Lo podemos ir armando antes y presentarlo antes. El diseño tiene que estar aprobado. Nos pueden dar un warning.
+- 2da entrega 26 junio
+	- Tenemos que presentar
+	- Código completo
+	- Actualizar el readme con como se ejecuta, casos de prueba, como se pueden reproducir.
+	- Decir si hicimos cambios en el diseño de la aplicación
+	- Lo que aprendimos en el medio.
+	- Incluir un link a un video de no más de 7 minutos en donde cada uno cuenta qué hico del tp.
+	- Pensar que somos arquitectos y se la mostramos a un junior. No línea por línea. Solo decir cosas técnicas valiosas.
+	- Mostramos la aplicación funcionando en distintos casos.
+- Instancia de final
+	- Nos pueden pedir correcciones.
+	- Condvar adentro de un actor nos matan
+	- Tendremos que poder responder acerca de la implementación de nuestra solución.
+- El archivo que tirará los pedidos lo definimos nosotros. No hay una parte de ejecución preestablecida con formatos específicos. 
+# Preguntas
+
+- Entonces cada robot y cada cliente es una instancia de un programa?
+
+- Capturar el pago puede ser rechazado. 
+- Par de preguntas
+	- Actor y proceso diferencia
+	- Cuando hablamos de proceso en el tp a qué se refiere. 
+- En la consigna dice que hay una aplicación que modela las interfaces de los clientes de los que se reciben los pedidos y luego los robots.  Esas son dos aplicaciones que se ocrren por separado. Varias instancias de una aplicación.
+- Cada pantalla del programa es una instancia.
+- Probablemente más fácil instancias independientes.
+- Si el archivo simula el input habría que tener múltiples archivos para múltiples pantallas? Podrían hacer todos lo mismo pero una paja.
+- Cada pantalla tiene un input independiente.
+- Los robots son lo mismo? Distintas instancias de mismo programa? 
+- Ariel:
+	- Modelar el que un proceso se pueda caer es más fácil con varios procesos que con uno solo.
+	- Hayq ue tener cuidado que en este enunciado, todos los elementos trabajan en espacios de memoria separados.
+	- No confundir mismo espacio de memoria con estado mutable compartido. Si mandamos un mensaje a través del mailbox de un actor en rust no lo estás serializando ni  nada.
+- Si dijimos que las comunicaciones entre las entidades tienen que ser por socket, está bien que esos mensajes de sockets estén encapsulados en los mensajes de los actores? O estamos cruzando cosas?
+	- Tiene varias interpretaciones. Los actores pueden consumir sockets sin más, pero si no querés también se puede hacer una pequeña interfaz que tome mensajes de un socket y los ponga como un mensaje de un actor y tu proceso internamente trabaja con actores. Eso es válido. Es un buen diseño.
+- Los robots se comunican con le gateway de pagos directamente o les corresponde a las terminales. 
+	- Les corresponde a las terminales.
+- No cierra concepto de captura de pago.
+	- Es como un commit de dos fases. Cuando hacemos una compra vamos y hacemos una reserva en la tarjeta y cuandonos mandan efectivamente la cosa es cuando se nos cobra.
+- No queda claro para qué se necesita un líder en un grupo de actores
+	- Si tenemos un conjunto indistinguible de entidades en donde todas puedan hacer todo, a veces alguna debe poder hacer acciones diferenciales.
+	- Se elige el líder para que no tengamos un punto de fallo tan grande.
+- Respecto a robustez
+	- Cualquier cosa se puede caer y hay que tener respuesta contra eso? Si, pero no somos la nasa.
+	- Contemplamos los casos en el que las cosas pueden fallar.
+	- Lo que no lleguemos a implementar, hay que SABERLO.
+	- Decir nos hubiera gustado soportar esto pero no llegamos.
+	- Caso complejo: Si se cae la terminal en el medio que el robot está haciendo el helado el robot recupere la transacció.
+	- Casos más simples sí.
+- Parte de pago más duda
+	- Cliente llega
+	- Pone la tarjeta
+	- Gateway de pago solo loggea y responde si está autorizada o no
+	- Cliente hace el pedido
+	- La tarjeta de crédito está bloqueada.
+	- Se prepara el helado
+	- Se paga -> Punto de fallo
+- Distintas instancias de terminales:
+	- Queremos que los pedidos se los anuncien a los diferentes robots.
+	- Estaría bien que hubiera una entidad intermedia que asignara a los robots?
+		- Single point of failure, mejor tener varias
+		- Terminales tienen que tener la dirección de todas? Sip. 
+- Ya se autorizó el pago -> Se va a servir el helado -> Si tomás chocolate, vas por menta y no hay, el chocolate se tira? Sip. Sino pensamos en la transaccionalidad de la operación. Fijémonos.
+- Si viene un cliente y nos pide 3 sabores, hay un límite en la canitdad de robots? Solo 1.
+- El tamaño del contenedor simula el tiempo criterio nuestro
+- Captura y autorización:
+	- Primero autorizás y después capturás
+	- Paso 1: Puede fallar para x tarjetas
+	- Paso 2 no puede fallar.
+- A Marcos le cuesta verlo no cliente servidor:
+	- Dos procesos interactúan y uno pide y otro resuelve no podés escapar de eso.
+	- Lo que no puede ser es una entidad omnipotente servidor que jamás se va a caer y todo pasa por ella.
+	- Querés servidores, varias instancias y que tengan alguna distribución.
+	- Todos misma copia y mute distribuido para irlo actualizando.
+- Julieta duda
+	- Dos fases. Paso dos se puede cancelar? 
+- No hay infinitos robots. Hay N robots. Lo mismo con las pantallas, hay N pantallas.
+- Sobre la posible falla de los robots, puede ser tan simple como que se detenga a un robot al medio de la ejecución. No con una probabilidad.
+- Si se cae el robot que estaba haciendo el pedido, no se puede perder el pedido y se tiene que concretar? Decidimos ustedes.
+- Si quisiéramos presentar el diseño como nos comunicamos. Codeemoslo a la par que vamos el código. 
+
+
+
+
+- Acordarse que al usar actores con sockets, en el actor se usa el split de tokio para tener un stream en donde escribir y otro para leer, pero al de escritura hay que ponerle un ArcMutex para que rust no se queje.
+- Al trabajar con distribuidos podemos tener una política de que si le mando 3 keep alives en 10 segundos entonces la considero una conexión perdida.
+- Haciendo la del anillo, podemos pasarnos una lista con las actualizaciones a los potes de helado local de cada uno y cuadnno nos llega eliminamos lo que pusimos la vuelta anterior y agregamos los nuevos cambios.
+
+
+
+- Podría haber más de un token.
+- Parte de lo que pide el enunciado es que hacemos un diseño ahora y luego vemos como varía nuestro diseño a la hora de implementarlo.
+- Si empecé por banana y cuando quise ir a buscar la naranja no había, simplemente se pierde el helado que ya se tomó. Pero no cobramos a la persona.
+- No podemos tener un token que bloquee todos los gustos de helado.
+- Capturas de pago:
+	- Se hace captura se loggea, si se cancela el pedido se loggea que se canceló.
+	- Gateway es aplicación para loggear.
+	- No tiene que guardar estado el gateway ni nada de eso.
+	- No hace falta resiliencia del gateway.
+- No se quedan en fila esperando, sino que va empezando el sistema de cobro de dos fases y luego el cliente se va de la pantalla "a otra parte" en donde se concrete el pago.  Luego la pantalla puede ir atendiendo a otros clientes.
+- No le cierra la idea de lider:
+	- Sos una instancia que es capaz de hacer lo mismo del líder, pero 
+	- Es una instancia diferenciada para algo, todas lo pueden hacer, pero lo tiene que hacer uno solo.
+- Tema sockets:
+	- Podemos tomar como supuesto que las distintas entidades conocen los puertos de las demás
+	- Sip, configurable pero conocido.
+	- Puertos conocidos.
+- Hay reestricción sobre el tipo de socket? Noup
+- Si usamos udp tenemos consideraciones en el caso de pérdida de paquetes? Sip, consideraciones en el modelo, me imagino que retransmitir.
+- No les queda claro si su diseño ya estaba aprobado para tirarse a programar.
+- Hay 2do recu primera fecha de final.
+- Tenemos que implementar sistemas para crear nuevos robots en el medio? Noup, hay N configurables.
+- Estaría bueno que sepamos qué pasa con el trabajo que un robot tenía en progreso.
+- Caso interfaz de pedidos debería haber algoritmo de recuperación? 
+- Le interesa a Ariel que, si hay un pedido que está in progress y el que lo estaba ejecutando murió, se le devuelva la plata.
+- Fueron por el lado de plantear que si un pedido está in progress y el robot se muere, darse cuenta que quedó in progress y lo agarra otro robot. Es difícil pero posible. Ni en pedo lo hago.
+- Si hay una cola de pedido, el robot se tiene que conectar con un servidor de colas. 
+- Gateway de pago no se cae.
+- Qué pasa si se caen las pantallas? Capaz se tiene que modelar también a la persona.
+- Tienen que sí o sí poder tomar diferentes gustos de helado.
+- Concurrencia de gustos:
+	- Si se tienen todos en un mismo proceso hay un overhead? Yo tengo chocolate y frutilla en un proceso. 
+	- El bloqueo de gustos puede ser símplemente la comunicación entre los robots. 
+	- Actor por gusto es válido la parecer.
+- No saben como hacer para encontrar un robot disponible desde las pantallas?
+	- Preguntarle a todos los robots y ver si lo agarra alguno. 
+- Si el helado es un estado que se mantiene en la memoria de los robots entonces no se cae.
+- Robot toma los gustos de a uno.
+- Si se acaba un gusto de helado se puede recargar? No hace falta que modelemos eso.
+- 
